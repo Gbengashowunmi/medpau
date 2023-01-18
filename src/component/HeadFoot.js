@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
 import "../component/headFoot.scss";
+import { HiMenuAlt3 } from "react-icons/hi";
+
 
 import {
   FaChevronRight,
@@ -10,6 +12,7 @@ import {
   FaTwitter,
 } from "react-icons/fa";
 import { MdEmail, MdLocationPin } from "react-icons/md";
+import { NavLink } from "react-router-dom";
 
 export default function HeadFoot({ children }) {
   // Sticky Menu Area
@@ -34,15 +37,19 @@ export default function HeadFoot({ children }) {
       <header className="nav">
         <div className="comapany-icon">
           <h2>MEDPAU</h2>
+        <div ><HiMenuAlt3 className="nav-bar"/></div>
+
         </div>
         <ul>
           <li>Home</li>
-          <li>About</li>
+          <NavLink to="/about"><li>About</li></NavLink>
           <li>Service</li>
           <li>Shop</li>
           <li>Blg</li>
           <li>MGTP</li>
           {/* <Button variant="contained">Contained</Button> */}
+          <button className="appointment-btn">APPOINTMENTS</button>
+
         </ul>
       </header>
       {children}

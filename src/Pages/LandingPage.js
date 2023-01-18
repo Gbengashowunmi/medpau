@@ -1,6 +1,6 @@
 import React from "react";
 import HeadFoot from "../component/HeadFoot";
-import SlickSlider from "../component/slickSlider/SlickSlider";
+// import SlickSlider from "../component/slickSlider/SlickSlider";
 import { Button } from "@mui/material";
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
@@ -36,35 +36,43 @@ export default function LandingPage() {
             <div class="carousel-item active">
               <div className="carousel-content">
                 <div className="details">
-                  <Button variant="contained" className="hero-btn light-btn"           data-aos="slide-down"
-          data-aos-offset="10"
-          data-aos-delay="30"
-          data-aos-duration="1000"
-          data-aos-easing="ease-in-out"
-          
-          data-aos-once="false">
+                  <Button
+                    variant="contained"
+                    className="hero-btn light-btn"
+                    data-aos="slide-down"
+                    data-aos-offset="10"
+                    data-aos-delay="30"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out"
+                    data-aos-once="false"
+                  >
                     SUPER SALE
                   </Button>
 
-                  <h1 className="title-hero" 
-                  data-aos="zoom-in"
-                  data-aos-offset="10"
-                  data-aos-delay="30"
-                  data-aos-duration="1000"
-                  data-aos-easing="ease-in-out"
-                  data-aos-once="false">
+                  <h1
+                    className="title-hero"
+                    data-aos="zoom-in"
+                    data-aos-offset="10"
+                    data-aos-delay="30"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out"
+                    data-aos-once="false"
+                  >
                     Best Online Medical Shopping Now
                   </h1>
                   <p>
                     Nulla vitae elit libero, a pharetra augue mollis interdum.
                   </p>
-                  <Button variant="contained" className="hero-btn main-btn" slide-up
-                                   data-aos="slide-up"
-                                   data-aos-offset="10"
-                                   data-aos-delay="30"
-                                   data-aos-duration="1000"
-                                   data-aos-easing="ease-in-out"
-                                   data-aos-once="false"
+                  <Button
+                    variant="contained"
+                    className="hero-btn main-btn"
+                    slide-up
+                    data-aos="slide-up"
+                    data-aos-offset="10"
+                    data-aos-delay="30"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out"
+                    data-aos-once="false"
                   >
                     Read more
                   </Button>
@@ -72,7 +80,7 @@ export default function LandingPage() {
                 <div className="image">
                   <img
                     className="d-block w-100 carousel-image"
-                    src=""
+                    src="/images/2-removebg-preview.png"
                     alt="First slide"
                   />
                 </div>
@@ -98,7 +106,7 @@ export default function LandingPage() {
                 <div className="image">
                   <img
                     className="d-block w-100 carousel-image"
-                    src=""
+                    src="/images/2-removebg-preview.png"
                     alt="First slide"
                   />
                 </div>
@@ -124,7 +132,7 @@ export default function LandingPage() {
                 <div className="image">
                   <img
                     className="d-block w-100 carousel-image"
-                    src=""
+                    src="/images/9__1_-removebg-preview.png"
                     alt="First slide"
                   />
                 </div>
@@ -153,25 +161,28 @@ export default function LandingPage() {
       </div>
 
       <main>
-        <section className="section-a"
-                          data-aos="slide-up"
-                          data-aos-offset="10"
-                          data-aos-delay="30"
-                          data-aos-duration="1000"
-                          data-aos-easing="ease-in-out"
-                          data-aos-once="false"
+        <section
+          className="section-a"
+          data-aos="slide-up"
+          data-aos-offset="10"
+          data-aos-delay="30"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-once="false"
         >
           <div className="left">
-            <div
-              className="section-description"
-            ></div>
+            <div className="section-description">
+              <p>Save up tp 50% purchase cost</p>
+              <h2>Healthcare Products</h2>
+              <button>SHOW MORE</button>
+            </div>
             <div className="img">
-              <img src="" alt="product" />
+              <img src="/images/" alt="product" />
             </div>
           </div>
           <div className="right">
             <h5>Free Shipping</h5>
-            <h3>30% OFF</h3>
+            <h2>30% OFF</h2>
             <p>
               Your team is great. They are truly outstanding and understand the
               equipment 100%. It's worth doing business with you.
@@ -189,18 +200,23 @@ export default function LandingPage() {
           data-aos-once="false"
         >
           <div className="left">
-            <div className="section-description"></div>
+            <h3>Trusted Brand</h3>
+            <p>there are many trusted brands we do business with</p>
+            <ul>
+              <li>Huge Selection</li>
+              <li>Always low Price</li>
+              <li>Reliable Quality</li>
+            </ul>
+          </div>
+          <div className="right">
+            <div className="section-description">
+              <p>Save up tp 50% purchase cost</p>
+              <h2>Healthcare Products</h2>
+              <button>SHOW MORE</button>
+            </div>
             <div className="img">
               <img src="" alt="product" />
             </div>
-          </div>
-          <div className="right">
-            <h5>Free Shipping</h5>
-            <h3>30% OFF</h3>
-            <p>
-              Your team is great. They are truly outstanding and understand the
-              equipment 100%. It's worth doing business with you.
-            </p>
           </div>
         </section>
 

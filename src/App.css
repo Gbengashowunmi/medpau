@@ -62,12 +62,13 @@
   margin-bottom: 50px;
   margin: auto;
   background-color: rgb(198, 233, 253);
+  padding: 1rem 2rem;
 
 }
 
 .carousel-indicators > li{
-  width: 20px;
-  height: 20px;
+  width: 12px;
+  height: 12px;
   background-color: rgb(7, 131, 202);
   border-radius: 50px;
   color: black;
@@ -121,7 +122,6 @@
 
 .carousel-content .image{
   width: 30%;
-border: 2px solid red;
 
 }
 
@@ -139,7 +139,7 @@ border: 2px solid red;
   height: 20px;
 }
 .carousel-content .image .carousel-image{
-  width: 80%;
+  width: 100%;
   height: auto;
 }
 
@@ -161,16 +161,74 @@ height: 25rem;
 margin: 3rem 0;
 }
 
+/* container backgrund style */
 .section-a .left,.section-b .left,.section-b .right, .section-a .right{
   height: 100%;
   box-shadow: 2px 2px 4px var(--clr-border-shadow);
   border-radius: 10px;
   background-color: var(--clr-background-grey);
 }
+
+.section-a .left, .section-b .right{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  justify-content: center;
+  /* margin: auto; */
+  padding: 1.5rem;
+  border: 1px solid green;
+
+}
+.section-a .left .section-description, .section-b .right .section-description{
+  /* border: 1px solid rebeccapurple; */
+  /* width: 60%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.section-description p{
+  color: var(--clr-primary);
+}
+.section-description h2, .section-b .left h3{
+  font-size: 2.5rem;
+}
+.section-description button{
+  padding: 1rem 1.7rem;
+  border-radius: 5px;
+  background-color: none;
+  transition: .6s;
+cursor: pointer;
+margin-top: 1.5rem;
+}
+.section-description button:hover{
+  background-color: black;
+  transition: .6s;
+  color: white;
+}
+.section-a .left .img{
+  border: 1px solid rebeccapurple;
+padding: 0;
+display: flex;
+justify-content: center;
+}
+.img img{
+  /* margin: auto; */
+  padding: 0;
+  margin: 0;
+  /* width: 100%; */
+}
 .section-a .right{
   background-color: var(--clr-primary);
   color: var(--clr-white) ;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  padding: 2rem;
+  line-height: 2rem;
+}
+.section-a .right h2{
+  font-size: 5rem;
 }
 
 .section-b{
@@ -178,7 +236,100 @@ margin: 3rem 0;
 }
 .section-b .left{
   background-color: var(--clr-secondary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  /* align-items: flex-start; */
+  padding: 0 3rem;
+  text-align: left;
 
+}
+
+
+@media (max-width:900px) {
+  .section-a, .section-b{
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    height: fit-content;
+    }
+    
+    .section-a .left,.section-b .left,.section-b .right, .section-a .right{
+      height: 100%;
+      box-shadow: 2px 2px 4px var(--clr-border-shadow);
+      border-radius: 10px;
+      background-color: var(--clr-background-grey);
+    }
+    
+    .section-a .left, .section-b .right{
+      display: flex;
+      justify-content: center;
+      /* margin: auto; */
+      padding: 1.5rem;
+    
+    }
+    .section-a .left .section-description, .section-b .right .section-description{
+      /* border: 1px solid rebeccapurple; */
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+    }
+    .section-description p{
+      color: var(--clr-primary);
+    }
+    .section-description h2, .section-b .left h3{
+      font-size: 2.5rem;
+    }
+    .section-description button{
+      padding: 1rem 1.7rem;
+      border-radius: 5px;
+      background-color: none;
+      transition: .6s;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    }
+    .section-description button:hover{
+      background-color: black;
+      transition: .6s;
+      color: white;
+    }
+    .section-a .left .img{
+      /* border: 1px solid rebeccapurple; */
+      width: 35%;
+    }
+    .section-a .right{
+      background-color: var(--clr-primary);
+      color: var(--clr-white) ;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: left;
+      padding: 2rem;
+      line-height: 2rem;
+    }
+    .section-a .right h2{
+      font-size: 5rem;
+    }
+    
+    .section-b{
+      grid-template-columns: 1fr ;
+
+    }
+    .section-b .left{
+      background-color: var(--clr-secondary);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: white;
+      /* align-items: flex-start; */
+      padding: 3rem 3rem;
+      text-align: left;
+    
+    }
 }
 @keyframes App-logo-spin {
   from {

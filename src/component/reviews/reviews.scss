@@ -1,0 +1,35 @@
+.review-container {
+  width: 500px;
+  background-color: var(--clr-light-blue-btn);
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  font-size: 1rem;
+  hr {
+    color: var(--clr-primary);
+    width: 100%;
+  }
+  .reviewer {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    gap: 1rem;
+    align-items: center;
+    .reviewer-img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50px;
+      border: 1px solid firebrick;
+    }
+    .reveiwer-info {
+      .job {
+        color: var(--clr-primary);
+        padding: 0;
+        margin: 0;
+      }
+    }
+  }
+}
