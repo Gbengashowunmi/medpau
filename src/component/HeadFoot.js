@@ -41,7 +41,7 @@ export default function HeadFoot({ children }) {
 
         </div>
         <ul>
-          <li>Home</li>
+        <NavLink to="/"><li>Home</li></NavLink>
           <NavLink to="/about"><li>About</li></NavLink>
           <li>Service</li>
           <li>Shop</li>
