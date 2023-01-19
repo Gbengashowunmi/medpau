@@ -111,7 +111,7 @@ display: flex;
 text-align: left;
 flex-direction: column;
 justify-content: center;
-padding-left: 6vw;
+padding-left: 7vw;
 }
 .carousel-item .details .hero-btn{
   width: fit-content;

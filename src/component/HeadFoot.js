@@ -47,7 +47,7 @@ export default function HeadFoot({ children }) {
           <li>Blg</li>
           <li>MGTP</li>
           {/* <Button variant="contained">Contained</Button> */}
-          <button className="appointment-btn">APPOINTMENTS</button>
+          <button className="appointment-btn">APPOINTMENTS +</button>
 
         </ul>
       </header>
@@ -81,11 +81,11 @@ export default function HeadFoot({ children }) {
           <hr />
           </div>
           <ul>
-            <li>
-              {" "}
+          <NavLink to="/about"> <li>
               <FaChevronRight />
               About Us
             </li>
+            </NavLink>
             <li>
               <FaChevronRight />
               Our Services

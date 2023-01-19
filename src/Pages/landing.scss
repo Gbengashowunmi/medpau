@@ -145,10 +145,10 @@ align-items: center;
     }
     .products-container{
     width: 100%;
-    padding: 2rem;
+    padding: .5rem .8rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 2rem;
+    column-gap: 2rem;
     }
 }
 
@@ -201,7 +201,6 @@ details{
   .featured-post, .new-arrivals{
     .products-container{
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 1.5rem;
     }
   }
 }
@@ -212,7 +211,8 @@ details{
   .featured-post, .new-arrivals{
     .products-container{
     grid-template-columns: 1fr 1fr;
-    gap: .6rem;
+    column-gap: .6rem;
+    row-gap: 2rem;
     }
   }
 }
