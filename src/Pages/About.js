@@ -9,17 +9,25 @@ import "./about.scss";
 export default function About() {
   return (
     <HeadFoot>
-      <main>
+      <div className="about-head">
+        <div className="image">
+        <img src="/images/breadcrumb-image-1.jpg" alt="about-us"/>
+        <div className="texts">
         <h2>About Us</h2>
         <p>
-          {" "}
           <MdOutlineHome />
-          <span>HOME</span> <FaChevronRight />{" "}
+          <span>HOME</span> <FaChevronRight />
           <span className="active">ABOUT US</span>
         </p>
-      </main>
-      <aside className="what-about-us ">
-        <div className="img"></div>
+
+        </div>
+        </div>
+        
+      </div>
+      <aside className="what-about-us">
+        <div className="img">
+          <img src="/images/1.jpg" alt="about-us" />
+        </div>
         <div className="details">
           <h4 className="light-blue-bg-text">WHAT ABOUT US</h4>
           <h2>Medpau International Limited</h2>
@@ -46,10 +54,10 @@ export default function About() {
           </p>
 
           <ul>
-            <li>Intervention Success</li>
-            <li>Client Satisfaction</li>
             <li>Happy with Staff</li>
             <li>Quality of Care Services</li>
+            <li>Intervention Success</li>
+            <li>Client Satisfaction</li>
             <li>Patient Experience</li>
           </ul>
           <p className="blue-text">Do you have any question?</p>
