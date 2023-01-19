@@ -53,7 +53,6 @@ overflow-x: hidden;
 }
 
 .main-btn{
-  padding: 15px 20px !important;
   background-color: rgb(7, 131, 202);
 
 }
@@ -73,20 +72,25 @@ height: fit-content;
 .carousel .carousel-inner .carousel-item{
   width: 100%;
   height: 55vw;
-  /* border: 1px solid green; */
 position: relative;
+}
 
+@media (max-width:600px) {
+  .carousel .carousel-inner .carousel-item{
+    height: 70vw;
+  }
 }
 
 .carousel-item .carousel-image{
 width: 100%;
   height: 100%;
-  /* object-fit: ; */
+  position: absolute;
 }
 
 .carousel-item .carousel-image .d-block{
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
 .carousel-indicators > li{
@@ -99,34 +103,42 @@ width: 100%;
   box-shadow: 0 0 4px rgb(19, 18, 18);
 }
 
-.carousel-item .details, .section-description{
-  /* border: 1px solid firebrick; */
-  position: absolute;
+.carousel-item .details{
+  border: 3px solid firebrick;
+  height: 100%;
   width: 60%;
-  top: 25%;
-  bottom: 25%;
-  left: 10%;
 display: flex;
 text-align: left;
 flex-direction: column;
 justify-content: center;
-align-items: flex-start;
+padding-left: 6vw;
 }
 .carousel-item .details .hero-btn{
-  /* font-size: 1vw; */
   width: fit-content;
   padding: 5px 10px;
   display: flex;
   align-items: center;
 }
 
-.details .title-hero, .section-description h2{
+.details .title-hero
+/* , .section-description h2 */
+{
   margin-top: 10px;
-  font-size: 80%;
+  font-size: 5vw;
   color: black;
 }
-.details p{
-  font-size: 90%;
+
+@media (max-width:500px) {
+  .details .title-hero
+  /* , .section-description h2 */
+  {
+    font-size: 6vw;
+  }
+  .carousel-item .details
+   /* .section-description */
+   {
+  padding-left: 8vw;
+  }
 }
 
 .carousel-control-prev, .carousel-control-next{
@@ -158,51 +170,67 @@ main{
 display: grid;
 grid-template-columns: 3fr 1.5fr;
 column-gap: 2rem;
-height: fit-content;
+height: 400px;
 margin: 2rem 0;
-border: 1px solid blue;
 }
-
 .section-b{
 grid-template-columns:1.5fr 3fr ;
-
 }
 
-.section-a .left{
+@media (max-width:900px) {
+  .section-a, .section-b{
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+    margin: 2rem 0;
+    }
+}
+.section-a .left, .section-b .right{
 position: relative;
+/* width: 100%; */
+height: 400px;
 }
 .section-a .left, .section-a .right, .section-b .left, .section-b .right{
   box-shadow: 2px 2px 4px var(--clr-border-shadow);
   border-radius: 10px;
 }
 
-.section-description{
-  position: absolute;
-width: 60%;
+.section-a .left .section-description, .section-b .right .section-description {
+  border: 3px solid firebrick;
+  height: 100%;
+  width: 60%;
+display: flex;
+text-align: left;
+flex-direction: column;
+justify-content: center;
+padding-left: 6vw;
+z-index: 9999;
+
 }
-.section-description button{
+/* .section-description button{
   padding: 5px 10px;
   border-radius: 5px;
   background-color: transparent;
   border: 1px solid black;
   transition: .6s;
 cursor: pointer;
-}
-.section-description button:hover{
+} */
+/* .section-description button:hover{
   background-color: black;
   color: white;
   transition: .6s;
-}
-.left .img{
+} */
+.left .img, .right .img{
   width: 100%;
   height: 100%;
-object-fit: cover;
+  position: absolute;
 
+/* z-index: 1; */
 }
 
 .img img{
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
 .section-a .right, .section-b .left{
@@ -217,10 +245,7 @@ object-fit: cover;
 .section-b .left{
   background-color: var(--clr-secondary);
 }
-.section-b .right{
-  position: relative;
 
-}
 
 
 

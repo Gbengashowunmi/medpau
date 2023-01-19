@@ -72,7 +72,7 @@ export default function LandingPage() {
                   >
                     Best Online Medical Shopping Now
                   </h1>
-                  <p>
+                  {/* <p>
                     Nulla vitae elit libero, a pharetra augue mollis interdum.
                   </p>
                   <Button
@@ -87,7 +87,115 @@ export default function LandingPage() {
                     data-aos-once="false"
                   >
                     Read more
+                  </Button> */}
+
+              </div>
+            </div>
+            <div className="carousel-item ">
+              <div className="carousel-image">
+
+              <img
+                    className="d-block w-100"
+                    src="/images/3-8.jpg"
+                    // "/images/3-8.jpg"
+                    alt="First slide"
+                  />
+              </div>
+                <div className="details">
+                  <Button
+                    variant="contained"
+                    className="hero-btn light-btn"
+                    data-aos="slide-down"
+                    data-aos-offset="10"
+                    data-aos-delay="30"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out"
+                    data-aos-once="false"
+                  >
+                    SUPER SALE
                   </Button>
+
+                  <h1
+                    className="title-hero"
+                    data-aos="zoom-in"
+                    data-aos-offset="10"
+                    data-aos-delay="30"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out"
+                    data-aos-once="false"
+                  >
+                    Best Online Medical Shopping Now
+                  </h1>
+                  {/* <p>
+                    Nulla vitae elit libero, a pharetra augue mollis interdum.
+                  </p>
+                  <Button
+                    variant="contained"
+                    className="hero-btn main-btn"
+                    slide-up
+                    data-aos="slide-up"
+                    data-aos-offset="10"
+                    data-aos-delay="30"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out"
+                    data-aos-once="false"
+                  >
+                    Read more
+                  </Button> */}
+
+              </div>
+            </div>
+            <div className="carousel-item ">
+              <div className="carousel-image">
+
+              <img
+                    className="d-block w-100"
+                    src="/images/3-8.jpg"
+                    // "/images/3-8.jpg"
+                    alt="First slide"
+                  />
+              </div>
+                <div className="details">
+                  <Button
+                    variant="contained"
+                    className="hero-btn light-btn"
+                    data-aos="slide-down"
+                    data-aos-offset="10"
+                    data-aos-delay="30"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out"
+                    data-aos-once="false"
+                  >
+                    SUPER SALE
+                  </Button>
+
+                  <h1
+                    className="title-hero"
+                    data-aos="zoom-in"
+                    data-aos-offset="10"
+                    data-aos-delay="30"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out"
+                    data-aos-once="false"
+                  >
+                    Best Online Medical Shopping Now
+                  </h1>
+                  {/* <p>
+                    Nulla vitae elit libero, a pharetra augue mollis interdum.
+                  </p>
+                  <Button
+                    variant="contained"
+                    className="hero-btn main-btn"
+                    slide-up
+                    data-aos="slide-up"
+                    data-aos-offset="10"
+                    data-aos-delay="30"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out"
+                    data-aos-once="false"
+                  >
+                    Read more
+                  </Button> */}
 
               </div>
             </div>
@@ -117,22 +225,22 @@ export default function LandingPage() {
       <main>
         <section
           className="section-a"
-          data-aos="slide-up"
-          data-aos-offset="10"
-          data-aos-delay="30"
-          data-aos-duration="1000"
-          data-aos-easing="ease-in-out"
-          data-aos-once="false"
+          // data-aos="slide-up"
+          // data-aos-offset="10"
+          // data-aos-delay="30"
+          // data-aos-duration="1000"
+          // data-aos-easing="ease-in-out"
+          // data-aos-once="false"
         >
           <div className="left">
-            <div className="section-description">
-              <p>Save up tp 50% purchase cost</p>
-              <h2>Healthcare Products</h2>
-              <button>SHOW MORE</button>
-            </div>
             <div className="img">
               <img src="/images/3-8.jpg" alt="product" />
             </div>
+            {/* <div className="section-description">
+              <p>Save up tp 50% purchase cost</p>
+              <h2>Healthcare Products</h2>
+              <button>SHOW MORE</button>
+            </div> */}
           </div>
           <div className="right">
             <h5>Free Shipping</h5>
@@ -163,14 +271,15 @@ export default function LandingPage() {
             </ul>
           </div>
           <div className="right">
-            <div className="section-description">
+          <div className="img">
+              <img src="/images/3-8.jpg" alt="product" />
+            </div>
+            {/* <div className="section-description">
               <p>Save up tp 50% purchase cost</p>
               <h2>Healthcare Products</h2>
               <button>SHOW MORE</button>
-            </div>
-            <div className="img">
-              <img src="/images/3-8.jpg" alt="product" />
-            </div>
+            </div> */}
+
           </div>
         </section>
 
