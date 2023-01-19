@@ -9,7 +9,6 @@ AOS.init();
 export default function LandingPage() {
   return (
     <HeadFoot>
-      <div className="carousel_container">
         <div
           id="carouselExampleIndicators"
           className="carousel slide"
@@ -31,15 +30,23 @@ export default function LandingPage() {
               data-slide-to="2"
               className="indicator"
             ></li>
+            <li
+              data-target="#carouselExampleIndicators"
+              data-slide-to="3"
+              className="indicator"
+            ></li>
           </ol>
           <div className="carousel-inner">
-            <div class="carousel-item active">
-              <div className="carousel-content">
+            <div className="carousel-item active">
+              <div className="carousel-image">
+
               <img
-                    className="d-block w-100 carousel-image"
+                    className="d-block w-100"
                     src="/images/3-8.jpg"
+                    // "/images/3-8.jpg"
                     alt="First slide"
                   />
+              </div>
                 <div className="details">
                   <Button
                     variant="contained"
@@ -81,10 +88,10 @@ export default function LandingPage() {
                   >
                     Read more
                   </Button>
-                </div>
 
               </div>
             </div>
+
 
           </div>
           <a
@@ -106,7 +113,6 @@ export default function LandingPage() {
             <span class="sr-only">Next</span>
           </a>
         </div>
-      </div>
 
       <main>
         <section
@@ -125,7 +131,7 @@ export default function LandingPage() {
               <button>SHOW MORE</button>
             </div>
             <div className="img">
-              <img src="/images/" alt="product" />
+              <img src="/images/3-8.jpg" alt="product" />
             </div>
           </div>
           <div className="right">
@@ -163,7 +169,7 @@ export default function LandingPage() {
               <button>SHOW MORE</button>
             </div>
             <div className="img">
-              <img src="" alt="product" />
+              <img src="/images/3-8.jpg" alt="product" />
             </div>
           </div>
         </section>
