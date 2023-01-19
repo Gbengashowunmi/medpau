@@ -1,9 +1,11 @@
 import React from "react";
 import HeadFoot from "../component/HeadFoot";
 // import SlickSlider from "../component/slickSlider/SlickSlider";
+import "./landing.scss"
 import { Button } from "@mui/material";
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
+import ProductCard from "../component/productCard/ProductCard";
 // ..
 AOS.init();
 export default function LandingPage() {
@@ -30,122 +32,9 @@ export default function LandingPage() {
               data-slide-to="2"
               className="indicator"
             ></li>
-            <li
-              data-target="#carouselExampleIndicators"
-              data-slide-to="3"
-              className="indicator"
-            ></li>
           </ol>
           <div className="carousel-inner">
             <div className="carousel-item active">
-              <div className="carousel-image">
-
-              <img
-                    className="d-block w-100"
-                    src="/images/3-8.jpg"
-                    // "/images/3-8.jpg"
-                    alt="First slide"
-                  />
-              </div>
-                <div className="details">
-                  <Button
-                    variant="contained"
-                    className="hero-btn light-btn"
-                    data-aos="slide-down"
-                    data-aos-offset="10"
-                    data-aos-delay="30"
-                    data-aos-duration="1000"
-                    data-aos-easing="ease-in-out"
-                    data-aos-once="false"
-                  >
-                    SUPER SALE
-                  </Button>
-
-                  <h1
-                    className="title-hero"
-                    data-aos="zoom-in"
-                    data-aos-offset="10"
-                    data-aos-delay="30"
-                    data-aos-duration="1000"
-                    data-aos-easing="ease-in-out"
-                    data-aos-once="false"
-                  >
-                    Best Online Medical Shopping Now
-                  </h1>
-                  {/* <p>
-                    Nulla vitae elit libero, a pharetra augue mollis interdum.
-                  </p>
-                  <Button
-                    variant="contained"
-                    className="hero-btn main-btn"
-                    slide-up
-                    data-aos="slide-up"
-                    data-aos-offset="10"
-                    data-aos-delay="30"
-                    data-aos-duration="1000"
-                    data-aos-easing="ease-in-out"
-                    data-aos-once="false"
-                  >
-                    Read more
-                  </Button> */}
-
-              </div>
-            </div>
-            <div className="carousel-item ">
-              <div className="carousel-image">
-
-              <img
-                    className="d-block w-100"
-                    src="/images/3-8.jpg"
-                    // "/images/3-8.jpg"
-                    alt="First slide"
-                  />
-              </div>
-                <div className="details">
-                  <Button
-                    variant="contained"
-                    className="hero-btn light-btn"
-                    data-aos="slide-down"
-                    data-aos-offset="10"
-                    data-aos-delay="30"
-                    data-aos-duration="1000"
-                    data-aos-easing="ease-in-out"
-                    data-aos-once="false"
-                  >
-                    SUPER SALE
-                  </Button>
-
-                  <h1
-                    className="title-hero"
-                    data-aos="zoom-in"
-                    data-aos-offset="10"
-                    data-aos-delay="30"
-                    data-aos-duration="1000"
-                    data-aos-easing="ease-in-out"
-                    data-aos-once="false"
-                  >
-                    Best Online Medical Shopping Now
-                  </h1>
-                  {/* <p>
-                    Nulla vitae elit libero, a pharetra augue mollis interdum.
-                  </p>
-                  <Button
-                    variant="contained"
-                    className="hero-btn main-btn"
-                    slide-up
-                    data-aos="slide-up"
-                    data-aos-offset="10"
-                    data-aos-delay="30"
-                    data-aos-duration="1000"
-                    data-aos-easing="ease-in-out"
-                    data-aos-once="false"
-                  >
-                    Read more
-                  </Button> */}
-
-              </div>
-            </div>
-            <div className="carousel-item ">
               <div className="carousel-image">
 
               <img
@@ -221,74 +110,81 @@ export default function LandingPage() {
             <span class="sr-only">Next</span>
           </a>
         </div>
+<main>
+  <div className="section-a">
+    <div className="left">
+      <img src="images/beannr-2 (3).jpg" alt="bg-pics"/>
+      <div className="details">
+      <p>SAVE UP TO 30% OFF</p>
+      <h2>Healthcare Product</h2>
+      <button>SHOW NOW</button>
+      </div>
+    </div>
+    <div className="right">
+      <p className="head">FREE SHIPPING</p>
+      <h2>30% OFF</h2>
+      <p>There are many variations of passages of Lorem Ipsum available
+      There are many variations of passages of Lorem Ipsum available
+</p>
+    </div>
+  </div>
+  <div className="section-b">
+  <div className="left">
+    <h4 className="head">Trusted Brands</h4>
+    <p>There are many variations of passages of Lorem Ipsum available
+</p>
 
-      <main>
-        <section
-          className="section-a"
-          // data-aos="slide-up"
-          // data-aos-offset="10"
-          // data-aos-delay="30"
-          // data-aos-duration="1000"
-          // data-aos-easing="ease-in-out"
-          // data-aos-once="false"
-        >
-          <div className="left">
-            <div className="img">
-              <img src="/images/3-8.jpg" alt="product" />
-            </div>
-            {/* <div className="section-description">
-              <p>Save up tp 50% purchase cost</p>
-              <h2>Healthcare Products</h2>
-              <button>SHOW MORE</button>
-            </div> */}
-          </div>
-          <div className="right">
-            <h5>Free Shipping</h5>
-            <h2>30% OFF</h2>
-            <p>
-              Your team is great. They are truly outstanding and understand the
-              equipment 100%. It's worth doing business with you.
-            </p>
-          </div>
-        </section>
-        <section
-          className="section-b"
-          data-aos="fade-up"
-          data-aos-offset="10"
-          data-aos-delay="10"
-          data-aos-duration="1000"
-          data-aos-easing="ease-in-out"
-          data-aos-mirror="true"
-          data-aos-once="false"
-        >
-          <div className="left">
-            <h3>Trusted Brand</h3>
-            <p>there are many trusted brands we do business with</p>
-            <ul>
-              <li>Huge Selection</li>
-              <li>Always low Price</li>
-              <li>Reliable Quality</li>
-            </ul>
-          </div>
-          <div className="right">
-          <div className="img">
-              <img src="/images/3-8.jpg" alt="product" />
-            </div>
-            {/* <div className="section-description">
-              <p>Save up tp 50% purchase cost</p>
-              <h2>Healthcare Products</h2>
-              <button>SHOW MORE</button>
-            </div> */}
+<ul>
+  <li>Huge selection
+</li>
+  <li>Always low Price
+</li>
+  <li>Free shipping
+</li>
+</ul>
+  </div>
+    <div className="right">
+    <img src="images/beannr-2 (3).jpg" alt="bg-pics"/>
+      <div className="details">
+      <p>SAVE UP TO 30% OFF</p>
+      <h2>Healthcare Product</h2>
+      <button>SHOW NOW</button>
+      </div>
+    </div>
+  </div>
+</main>
+  
 
-          </div>
-        </section>
+  <aside className="new-arrivals">
+    <div className="head">
+<h6>FEATURE</h6>
+<h1>New Arrivals</h1>
+    </div>
+    <div className="products-container">
 
-        <section className="featured-products">
-          <h5>Feature</h5>
-          <h3>Featured Products</h3>
-          {/* <SlickSlider/> */}
-        </section>
-      </main>
+    <div><ProductCard/></div>
+    <div><ProductCard/></div>
+    <div><ProductCard/></div>
+    <div><ProductCard/></div>
+    </div>
+  </aside>
+  <aside className="featured-post">
+    <div className="head">
+<h6>FEATURE</h6>
+<h1>Feature Products</h1>
+    </div>
+    <div className="products-container">
+
+    <div><ProductCard/></div>
+    <div><ProductCard/></div>
+    <div><ProductCard/></div>
+    <div><ProductCard/></div>
+    <div><ProductCard/></div>
+    <div><ProductCard/></div>
+    <div><ProductCard/></div>
+    <div><ProductCard/></div>
+    </div>
+  </aside>
     </HeadFoot>
   );
 }

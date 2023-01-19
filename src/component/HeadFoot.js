@@ -27,13 +27,12 @@ export default function HeadFoot({ children }) {
   const isSticky = (e) => {
     const header = document.querySelector(".nav");
     const scrollTop = window.scrollY;
-    scrollTop >= 4
-      ? header.classList.add("is-sticky")
-      : header.classList.remove("is-sticky");
+    scrollTop >= 40
+      ? header.classList.add("is-sticky") : header.classList.remove("is-sticky");
   };
 
   return (
-    <div>
+    <div className="head-foot-wrapper">
       <header className="nav">
         <div className="comapany-icon">
           <h2>MEDPAU</h2>
