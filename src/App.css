@@ -59,12 +59,7 @@ overflow-x: hidden;
 }
 .carousel {
    width: 100%;
-  /* padding:1rem 3rem; */
   height: fit-content;
-  /* border: 2px solid violet; */
-  /* margin: auto; */
-  /* background-color: rgb(198, 233, 253); */ 
-  /* padding: 1rem 2rem; */
 
 }
 
@@ -118,15 +113,16 @@ justify-content: center;
 align-items: flex-start;
 }
 .carousel-item .details .hero-btn{
-  font-size: 1vw;
+  /* font-size: 1vw; */
   width: fit-content;
+  padding: 5px 10px;
   display: flex;
   align-items: center;
 }
 
 .details .title-hero, .section-description h2{
   margin-top: 10px;
-  font-size: 5vw;
+  font-size: 80%;
   color: black;
 }
 .details p{
@@ -155,7 +151,7 @@ MAIN
 */
 main{
   width: 100%;
-  padding: 3rem 3rem;
+  padding: 1rem 3rem;
   min-height: 500px;
 }
 .section-a, .section-b{
