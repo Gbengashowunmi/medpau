@@ -54,17 +54,15 @@ overflow-x: hidden;
 
 .main-btn{
   padding: 15px 20px !important;
-  background-color: rgb(7, 131, 202) !important;
+  background-color: rgb(7, 131, 202);
 
 }
 .carousel_container {
   width: 100%;
-  height: 100vh;
-  /* border: 2px solid violet; */
-  margin-bottom: 50px;
+  border: 2px solid violet;
   margin: auto;
   background-color: rgb(198, 233, 253);
-  padding: 1rem 2rem;
+  /* padding: 1rem 2rem; */
 
 }
 
@@ -77,52 +75,35 @@ overflow-x: hidden;
   border: 2px solid rgb(238, 242, 243);
   box-shadow: 0 0 4px rgb(19, 18, 18);
 }
-.carousel-inner{
-  width: 100%;
-  height: 100%;
-  padding: 0 2rem;
-
-}
 
 
 .carousel-content{
-  /* width: 100%; */
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  align-items: center;
-  justify-content: center;
-  margin: 2% 0;
-  padding: 4rem;
-  /* border: 2px solid red; */
+  width: 100%;
+  height: 35rem;
+  /* margin: 2% 0; */
+  /* padding: 4rem; */
+  position: relative;
 
 }
 .carousel-content .details{
-  /* border: 2px solid green; */
-  text-align: left;
-  display: flex;
-  flex-direction: column;
+  border: 2px solid green;
+  /* text-align: left; */
+  /* display: flex; */
+  /* flex-direction: column; */
   align-items: left;
   justify-content: center;
   width: 70%;
+  height: fit-content;
+  z-index: 999;
 }
 .carousel-content .details .hero-btn{
-  background-color: tomato;
   width: fit-content;
 }
 
-.title-hero{
-  /* font-weight: 700; */
-  color: #222131;
-}
-
 .details .title-hero{
-  font-size: 4.5vw;
+  /* font-size: 4.5vw; */
 }
 
-.carousel-content .image{
-  width: 30%;
-
-}
 
 .carousel-control-prev, .carousel-control-next{
   background-color: rgb(7, 131, 202);
@@ -133,13 +114,13 @@ overflow-x: hidden;
   border-radius:50px;
 }
 .carousel-control-prev-icon, .carousel-control-next-icon{
-  /* background-color: rgb(2, 41, 2); */
   width: 20px;
   height: 20px;
 }
-.carousel-content .image .carousel-image{
-  width: 100%;
-  height: auto;
+.carousel-content .carousel-image{
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 /* 

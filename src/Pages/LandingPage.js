@@ -35,6 +35,11 @@ export default function LandingPage() {
           <div className="carousel-inner">
             <div class="carousel-item active">
               <div className="carousel-content">
+              <img
+                    className="d-block w-100 carousel-image"
+                    src="/images/3-8.jpg"
+                    alt="First slide"
+                  />
                 <div className="details">
                   <Button
                     variant="contained"
@@ -77,67 +82,10 @@ export default function LandingPage() {
                     Read more
                   </Button>
                 </div>
-                <div className="image">
-                  <img
-                    className="d-block w-100 carousel-image"
-                    src="/images/2-removebg-preview.png"
-                    alt="First slide"
-                  />
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div className="carousel-content">
-                <div className="details">
-                  <Button variant="contained" className="hero-btn light-btn">
-                    SUPER SALE
-                  </Button>
 
-                  <h1 className="title-hero">
-                    Best Online Medical Shopping Now
-                  </h1>
-                  <p>
-                    Nulla vitae elit libero, a pharetra augue mollis interdum.
-                  </p>
-                  <Button variant="contained" className="hero-btn main-btn">
-                    Read more
-                  </Button>
-                </div>
-                <div className="image">
-                  <img
-                    className="d-block w-100 carousel-image"
-                    src="/images/2-removebg-preview.png"
-                    alt="First slide"
-                  />
-                </div>
               </div>
             </div>
-            <div class="carousel-item">
-              <div className="carousel-content">
-                <div className="details">
-                  <Button variant="contained" className="hero-btn light-btn">
-                    SUPER SALE
-                  </Button>
 
-                  <h1 className="title-hero">
-                    Best Online Medical Shopping Now
-                  </h1>
-                  <p>
-                    Nulla vitae elit libero, a pharetra augue mollis interdum.
-                  </p>
-                  <Button variant="contained" className="hero-btn main-btn">
-                    Read more
-                  </Button>
-                </div>
-                <div className="image">
-                  <img
-                    className="d-block w-100 carousel-image"
-                    src="/images/9__1_-removebg-preview.png"
-                    alt="First slide"
-                  />
-                </div>
-              </div>
-            </div>
           </div>
           <a
             className="carousel-control-prev"
