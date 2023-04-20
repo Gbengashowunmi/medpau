@@ -8,7 +8,7 @@ export default function TeamSlide() {
   var settings = {
     dots: true,
     infinite: true,
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
     speed: 3000,
@@ -61,13 +61,6 @@ export default function TeamSlide() {
         />
       </div>
 
-      <div className="item">
-        <TeamMember
-          image="/images/VianneyMobelus.jpeg"
-          name="Vianney Mobelus"
-          position="International sales"
-        />
-      </div>
       <div className="item">
         <TeamMember
           image="/images/DareAfolabi.jpeg"
