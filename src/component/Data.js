@@ -19,7 +19,7 @@ const data = [
   },
   {
     id: 34,
-    image: "/images/product-images/Refurbished_Nikkiso_DBB-07.jpg",
+    image: "/images/product-images/nikkisosss.jpg",
     description: "",
     brand: "",
     area: "featured",
