@@ -145,38 +145,7 @@ export default function HeadFoot({ children, pageTitle, description }) {
               </MenuItem>
             </NavLink>
           </Menu>
-          {/* {showShopCategory ? (
-            <div className="shop_dropdown">
-              <ul>
-                <NavLink to="/shop">
-                  <li onClick={handleShop}>See All Products</li>
-                </NavLink>
-                <NavLink to="/shop/Hemodialysis">
-                  <li onClick={handleShop}>Go to Hemodialysis</li>
-                </NavLink>
-
-                <NavLink to="/shop/ICU Equipment">
-                  <li onClick={handleShop}>Go to ICU Equipment</li>
-                </NavLink>
-                <NavLink to="/shop/Diagnostic Imaging Equipment">
-                  <li onClick={handleShop}>
-                    Go to Diagnostic Imaging Equipment
-                  </li>
-                </NavLink>
-
-                <NavLink to="/shop/Operating Theatre Equipment">
-                  <li onClick={handleShop}>
-                    Go to Operating Theater Equipment
-                  </li>
-                </NavLink>
-                <NavLink to="/shop/Morgue and Body handling">
-                  <li onClick={handleShop}>Go to Morgue and Body handling</li>
-                </NavLink>
-              </ul>
-            </div>
-          ) : (
-            ""
-          )} */}
+        
           {/* shop dropdown ends  */}
 
           <NavLink to="/service">

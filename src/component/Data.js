@@ -636,4 +636,24 @@ export const partners = [
   { id: 10, image: "/images/partners/partner10.jpeg" },
 ];
 
+export const blog = [
+  // {
+  //   id: 1,
+  //   image: "",
+  //   title: "AWARD OF OUTSTANDING DIALYSIS EQUIPMENT COMPANY IN NIGERIA",
+  //   shortDescription:
+  //     "Medpau is proud to announce that we have been nominated for the Dove Healthcare Awards in the category of Outstanding Dialysis Equipment Marketing Company in Nigeria. ",
+  //   date: "May 1, 2023",
+  //   link: "//mic.hashnode.dev/shopify-backend-docs",
+  // },
+  {
+    id: 2,
+    image: "/images/medpau-award.jpeg",
+    title: "AWARD OF OUTSTANDING DIALYSIS EQUIPMENT COMPANY IN NIGERIA",
+    shortDescription:
+      "Medpau is proud to announce that we have been nominated for the Dove Healthcare Awards in the category of Outstanding Dialysis Equipment Marketing Company in Nigeria. ",
+    date: "May 2, 2023",
+    link: "//medpau.hashnode.dev/award-of-outstanding-dialysis-equipment-company-in-nigeria",
+  },
+];
 export default data;

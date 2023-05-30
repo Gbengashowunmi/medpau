@@ -2,7 +2,7 @@ import React from 'react'
 import { FaChevronRight } from 'react-icons/fa'
 import { MdOutlineHome } from 'react-icons/md'
 import { NavLink } from 'react-router-dom'
-// import Blog from '../../component/blog/Blog'
+import Blog from '../../component/blog/Blog'
 import HeadFoot from '../../component/HeadFoot'
 import "./ourblogs.scss"
 
@@ -38,13 +38,10 @@ export default function OurBlogs() {
         </div>
       </div>
 
-        <h4>Loading, please check back shortly...</h4>
+        {/* <h4>Loading, please check back shortly...</h4> */}
       <div className='all_blogs'>
-        {/* <Blog/>
+    
         <Blog/>
-        <Blog/>
-        <Blog/>
-        <Blog/> */}
         </div>
     </HeadFoot>
   )

@@ -23,7 +23,8 @@ export default function LandingPage() {
   return (
     <HeadFoot
       pageTitle="International Limited Home Page. sales of products, technical solutions, read."
-      description="Welcome to medpau international limited, we offer sales of medical equipments and products, technical services solutions and financial support for instalmental purchase of expensive medical equipments/facilities. read">
+      description="Welcome to medpau international limited, we offer sales of medical equipments and products, technical services solutions and financial support for instalmental purchase of expensive medical equipments/facilities. read"
+    >
       <main>
         <Carousel />
       </main>
@@ -40,7 +41,8 @@ export default function LandingPage() {
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
             data-aos-mirror="true"
-            data-aos-once="false">
+            data-aos-once="false"
+          >
             <h3>Explore our Specialized Solutions </h3>
             <p>
               Are you looking to cut cost without compromising value? Explore
@@ -54,7 +56,8 @@ export default function LandingPage() {
             open={open}
             onClose={handleClose}
             aria-labelledby="modal-modal-title"
-            aria-describedby="modal-modal-description">
+            aria-describedby="modal-modal-description"
+          >
             <div className="healthvest_wrapper our_specialized">
               <div className="cancel" onClick={handleClose}>
                 X
@@ -79,7 +82,8 @@ export default function LandingPage() {
             data-aos-duration="1200"
             data-aos-easing="ease-in-out"
             data-aos-mirror="true"
-            data-aos-once="false">
+            data-aos-once="false"
+          >
             <h3>Need financing?</h3> <br />
             <p>
               Is your budget restricted? We offer Financing solutions for your
@@ -97,7 +101,8 @@ export default function LandingPage() {
             data-aos-duration="1400"
             data-aos-easing="ease-in-out"
             data-aos-mirror="true"
-            data-aos-once="false">
+            data-aos-once="false"
+          >
             <h3>Have a technical complain?</h3>
             <p>
               We provide unmatched after sales support, 24/7 online support and
@@ -119,7 +124,8 @@ export default function LandingPage() {
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
           data-aos-mirror="true"
-          data-aos-once="true">
+          data-aos-once="true"
+        >
           <h3>Working Hours</h3>
           <hr />
           <h6>
@@ -145,7 +151,16 @@ export default function LandingPage() {
             We provide high quality, integrated healthcare services, based on a
             patient - centered
           </p>
-          <button>BOOK AN APPOINTMENT</button>
+          <div className="buttons_wrapper">
+            <button>BOOK AN APPOINTMENT</button>
+            <Link
+              to={`//api.whatsapp.com/send?phone=2349085323596&text=Hello+MedPau+International+Limited.+I+would+like+to+get+a+Quote+for....`}
+              target="blank"
+              rel="noopener noreferrer"
+            >
+              <button>REQUEST A QUOTE</button>
+            </Link>
+          </div>
         </div>
         <div
           className="work-hour our-process"
@@ -155,7 +170,8 @@ export default function LandingPage() {
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
           data-aos-mirror="true"
-          data-aos-once="true">
+          data-aos-once="true"
+        >
           <div className="img">
             <source type="image/webp" srcSet="image.webp" />
             <img src="/images/turnkey.jpeg" alt="aside" />
@@ -200,7 +216,8 @@ export default function LandingPage() {
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
           data-aos-mirror="true"
-          data-aos-once="true">
+          data-aos-once="true"
+        >
           <div className="img">
             <source type="image/webp" srcSet="image.webp" />
             <img src="/images/our_process.jpeg" alt="aside" />

@@ -1,19 +1,35 @@
-import React from 'react'
-import { FaChevronRight } from 'react-icons/fa'
-import { Link } from 'react-router-dom'
-import "./blog.scss"
+import React, { useEffect, useState } from "react";
+import { FaChevronRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import "./blog.scss";
+import { blog } from "../Data";
 export default function Blog() {
-  return (
-   <Link to ="/our-blogs"> 
-   <div className='blog_wrapper'>
-        <img src='/images/fitness.jpg_BJFwyf5Mo.jpg' alt='blog'/>
-        <section className='description'>
-        <h4>Title of blog</h4>
-        <p>Short description Short description Short description Short description</p>
-        <p>date published</p>
-       <span> <p>Read more</p> <FaChevronRight /> </span>
-        </section>
-    </div>
-    </Link>
-  )
+  const [blogs, setBlogs] = useState([]);
+  useEffect(() => {
+    setBlogs(blog);
+  }, []);
+
+  return blogs.map((blog) => {
+    const { title, id, image, shortDescription, link, date } = blog;
+
+    return (
+      <Link to={link} key={id} target="_blank">
+        <div className="blog_wrapper">
+          <img src={image} alt={title} />
+          <section className="description">
+            <h4>{title}</h4>
+            <p className="short_desc">
+              {`${shortDescription}`.substring(0, 35)}...
+            </p>
+            <p className="date">{date}</p>
+            <Link to={link}>
+              <span>
+                <p>Read more</p> <FaChevronRight />
+              </span>
+            </Link>
+          </section>
+        </div>
+      </Link>
+    );
+  });
 }

@@ -41,7 +41,7 @@ export default function Newsletter() {
             setShowMessage(false);
             //    to reload after success message
             window.location.reload();
-          }, 3000);
+          }, 2500);
         },
         (error) => {
           setMessage(`${error.text}, Try again`);
@@ -71,6 +71,7 @@ export default function Newsletter() {
           className="appointment-btn"
           disabled={disable}
         >
+          
           {loading ? "Please wait..." : "Subscribe"}
         </Button>
       </form>

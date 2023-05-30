@@ -1,10 +1,10 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
 export class ChatMuna extends Component {
-    componentDidMount(){
+  componentDidMount() {
     (function (d, m) {
       var kommunicateSettings = {
-        appId: "1d4658866c481a0dba301952112935ce9",
+        appId: "6c248f815f81eed3dfe884ae46346134",
         popupWidget: true,
         automaticChatOpenOnNavigation: true,
       };
@@ -17,18 +17,14 @@ export class ChatMuna extends Component {
       window.kommunicate = m;
       m._globals = kommunicateSettings;
     })(document, window.kommunicate || {});
-/* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
-    }
+    /* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
+  }
   render() {
-    return (
-      <>
-      
-      </>
-    )
+    return <></>;
   }
 }
 
-export default ChatMuna
+export default ChatMuna;
 
 // import React, { useState } from 'react';
 // import openai from 'openai'; // Assuming the OpenAI API is installed via npm
