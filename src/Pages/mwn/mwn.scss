@@ -1,16 +1,22 @@
 .about_mwn {
-//   border: 2px solid red;
+  //   border: 2px solid red;
   width: 100%;
   height: fit-content;
   display: flex;
   align-items: center;
   flex-direction: column;
   background-color: var(--clr-background-grey);
-//   justify-content: center;
+  //   justify-content: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--clr-secondary);
+}
+.why_sgn_up {
+  text-align: left;
+  line-height: 40px;
 }
 .team {
   width: 100%;
-  border: 2px solid red;
+  // border: 2px solid red;
   height: fit-content;
   text-align: center;
   .team_container {
@@ -38,12 +44,43 @@
 .footnote {
   width: 100%;
   height: fit-content;
-  border: 2px solid red;
   background-color: var(--clr-secondary);
+  color: var(--clr-white);
+  padding: 1rem 0;
   ul {
-    display: flex;
-    color: var(--clr-white);
+    display: grid;
+    width: 80%;
+    margin: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    // flex-wrap: wrap;
+    justify-content: center;
     list-style: none;
-    gap: 1rem;
+    gap: 2rem;
+    li {
+      background-color: var(--clr-background-grey);
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      color: var(--clr-secondary);
+      border: 1px solid var(--clr-background-grey);
+      transition: 0.6s;
+      cursor: pointer;
+    }
+    li:hover {
+      background-color: var(--clr-secondary);
+      color: var(--clr-white);
+      border: 1px solid var(--clr-white);
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .footnote {
+    ul {
+      width: 90%;
+      grid-template-columns: 1fr 1fr;
+      li {
+        font-size: 80%;
+      }
+    }
   }
 }

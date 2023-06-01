@@ -77,7 +77,8 @@ export default function HeadFoot({ children, pageTitle, description }) {
       </Helmet>
       <div
         onClick={handleToggle}
-        className={`${isOpen ? "overlay" : "show"}`}></div>
+        className={`${isOpen ? "overlay" : "show"}`}
+      ></div>
       <header className="nav">
         <div className="comapany-icon">
           <div className="logo">
@@ -114,7 +115,8 @@ export default function HeadFoot({ children, pageTitle, description }) {
             onClose={handleClose}
             MenuListProps={{
               "aria-labelledby": "basic-button",
-            }}>
+            }}
+          >
             <NavLink to="/shop">
               <MenuItem onClick={handleClose}>See All Products</MenuItem>
             </NavLink>
@@ -145,7 +147,7 @@ export default function HeadFoot({ children, pageTitle, description }) {
               </MenuItem>
             </NavLink>
           </Menu>
-        
+
           {/* shop dropdown ends  */}
 
           <NavLink to="/service">
@@ -163,7 +165,8 @@ export default function HeadFoot({ children, pageTitle, description }) {
           <Button
             variant="contained"
             className="appointment-btn"
-            onClick={handleOpenModal}>
+            onClick={handleOpenModal}
+          >
             Healthvest
           </Button>
         </ul>
@@ -173,7 +176,8 @@ export default function HeadFoot({ children, pageTitle, description }) {
           open={openModal}
           onClose={handleCloseModal}
           aria-labelledby="modal-modal-title"
-          aria-describedby="modal-modal-description">
+          aria-describedby="modal-modal-description"
+        >
           <div className="healthvest_wrapper">
             <div className="cancel" onClick={handleCloseModal}>
               X
@@ -209,7 +213,8 @@ export default function HeadFoot({ children, pageTitle, description }) {
                     <Button
                       variant="contained"
                       className="appointment-btn"
-                      onClick={handleCloseModal}>
+                      onClick={handleCloseModal}
+                    >
                       Apply for healthvest
                     </Button>
                   </Link>
@@ -223,14 +228,16 @@ export default function HeadFoot({ children, pageTitle, description }) {
                   <Button
                     variant="contained"
                     className="appointment-btn"
-                    onClick={handleCloseModal}>
+                    onClick={handleCloseModal}
+                  >
                     Close
                   </Button>
                   <Link to="/financial-support">
                     <Button
                       variant="contained"
                       className="appointment-btn"
-                      onClick={handleCloseModal}>
+                      onClick={handleCloseModal}
+                    >
                       Apply for healthvest
                     </Button>
                   </Link>
@@ -256,7 +263,8 @@ export default function HeadFoot({ children, pageTitle, description }) {
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
           data-aos-mirror="true"
-          data-aos-once="true">
+          data-aos-once="true"
+        >
           <h3>MEDPAU</h3>
           <p>
             At MedPau, we believe smart innovations in healthcare is key to
@@ -281,7 +289,8 @@ export default function HeadFoot({ children, pageTitle, description }) {
             </Link>
             <Link
               to="//twitter.com/medpauintl?s=11&t=zBroa9mFl_fitJFK1HbUcQ"
-              target="_blank">
+              target="_blank"
+            >
               <li>
                 <FaTwitter />
               </li>
@@ -296,16 +305,18 @@ export default function HeadFoot({ children, pageTitle, description }) {
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
           data-aos-mirror="true"
-          data-aos-once="true">
+          data-aos-once="true"
+        >
           <div className="head">
             <h3>Medpau Impact Projects </h3>
             <hr />
           </div>
           <ul>
             <NavLink
-              to="//medpauimpacts.com/womens-network/"
+              to="/medpau-women-network"
               target="blank"
-              rel="noopener noreferrer">
+              rel="noopener noreferrer"
+            >
               {" "}
               <li>
                 <FaChevronRight />
@@ -315,7 +326,8 @@ export default function HeadFoot({ children, pageTitle, description }) {
             <NavLink
               to="//medpauimpacts.com/mgtp/"
               target="blank"
-              rel="noopener noreferrer">
+              rel="noopener noreferrer"
+            >
               <li>
                 <FaChevronRight />
                 Medpau Graduate Training Program
@@ -324,7 +336,8 @@ export default function HeadFoot({ children, pageTitle, description }) {
             <NavLink
               to="//medpauimpacts.com/wkd/"
               target="blank"
-              rel="noopener noreferrer">
+              rel="noopener noreferrer"
+            >
               {" "}
               <li>
                 <FaChevronRight />
@@ -353,7 +366,8 @@ export default function HeadFoot({ children, pageTitle, description }) {
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
           data-aos-mirror="true"
-          data-aos-once="true">
+          data-aos-once="true"
+        >
           <div className="head">
             <h3>Recent Posts</h3>
             <hr />
@@ -367,7 +381,8 @@ export default function HeadFoot({ children, pageTitle, description }) {
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
           data-aos-mirror="true"
-          data-aos-once="true">
+          data-aos-once="true"
+        >
           <div className="head">
             <h3>Contact Us</h3>
             <hr />

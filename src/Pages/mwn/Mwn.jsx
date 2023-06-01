@@ -28,8 +28,8 @@ export default function Mwn() {
         </div>
         <div className="details">
           <h4 className="light-blue-bg-text">MEDPAU WOMEN NETWORK (MWN) </h4>
-          <h2>Mentoring Program</h2>
-          <h4>INTRODUCTION</h4>
+          <h3>Mentoring Program</h3>
+          <h4 className="light-blue-bg-text">INTRODUCTION</h4>
           <p>
             The Medpau Women Network <br /> A network created to connect and
             unite women in healthcare and other workspaces aimed at promoting
@@ -39,39 +39,35 @@ export default function Mwn() {
             supportive community a safe space for women to achieve success in
             their professional endeavors.
           </p>
-          {/* <p>
-            Do you know what all female high achievers' women have in common?
-            Someone who helped them see themselves in ways they may not
-            otherwise see in themselves, someone who held their hands and helped
-            them unleash their inner strength, someone who pushed them to grow
-            and guided them through it. MWN Mentoring Program is designed to
-            empower women and help them build skills needed to get ahead in
-            their career and rise to leadership positions. It models young women
-            in the healthcare industry into high performers, high achievers and
-            agents of change.
-          </p> */}
 
-          {/* <ul
-            data-aos="zoom-in-right"
-            data-aos-offset="50"
-            data-aos-delay="10"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
-            data-aos-mirror="true"
-            data-aos-once="false"
-          >
-            <li>Happy with Staff</li>
-            <li>Quality of Care Services</li>
-            <li>Intervention Success</li>
-            <li>Client Satisfaction</li>
-            <li>Patient Experience</li>
-          </ul> */}
-          {/* <p className="blue-text">Do you have any question?</p> */}
-          {/* <h4>
-            <a href="tel:+2349085323596">
-              <FaPhone /> <span>+234908 532 3596</span>
-            </a>
-          </h4> */}
+          <section className="choose-us">
+            <h3 className="light-blue-bg-text">
+              Why sign up for MWN Mentoring Program?
+            </h3>
+            <p className="why_sgn_up">
+              The MWN Mentoring program is designed to facilitates professional
+              growth at different stages in your career journey, through
+              collaborative learning, hands on projects, group discussion,
+              peer-to-peer learning, 1-on-1 conversations. <br /> It creates a
+              free and safe space where you to ask questions, receive support,
+              build confidence, gain new perspectives and deeper insight into
+              the Healthcare industry. <br />
+              You will engage in group discussions, 1-on-1 as well as
+              peer-to-peer learning. You will also engage with leaders from
+              Senior and Management positions, benefit from their rich
+              experiences and knowledge of the industry. <br /> They will also
+              help you navigate your current challenges as well as challenges
+              you are likely going to encounter in the future. <br /> You will
+              also build strong and lifelong professional relationship, and
+              connections. <br /> By the time you finish this program, you will
+              be able to clearly define and set your career goals, be guided to
+              achieve them, receive and apply constructive feedback necessary to
+              achieve those goals. <br />
+              You will chart your career path and build new skills needed to
+              take on new roles, challenge yourself and rise to higher positions
+              in your career.
+            </p>
+          </section>
         </div>
       </aside>
 
@@ -152,32 +148,33 @@ export default function Mwn() {
               </p>
             </div>
           </div>
-
         </div>
       </section>
       <section className="choose-us">
         <h3 className="light-blue-bg-text">
           Why sign up for MWN Mentoring Program?
         </h3>
-        <p>
+        <p className="why_sgn_up">
           The MWN Mentoring program is designed to facilitates professional
           growth at different stages in your career journey, through
           collaborative learning, hands on projects, group discussion,
-          peer-to-peer learning, 1-on-1 conversations. It creates a free and
-          safe space where you to ask questions, receive support, build
+          peer-to-peer learning, 1-on-1 conversations. <br /> It creates a free
+          and safe space where you to ask questions, receive support, build
           confidence, gain new perspectives and deeper insight into the
-          Healthcare industry. You will engage in group discussions, 1-on-1 as
-          well as peer-to-peer learning. You will also engage with leaders from
-          Senior and Management positions, benefit from their rich experiences
-          and knowledge of the industry. They will also help you navigate your
-          current challenges as well as challenges you are likely going to
-          encounter in the future. You will also build strong and lifelong
-          professional relationship, and connections. By the time you finish
-          this program, you will be able to clearly define and set your career
-          goals, be guided to achieve them, receive and apply constructive
-          feedback necessary to achieve those goals. You will chart your career
-          path and build new skills needed to take on new roles, challenge
-          yourself and rise to higher positions in your career.
+          Healthcare industry. <br />
+          You will engage in group discussions, 1-on-1 as well as peer-to-peer
+          learning. You will also engage with leaders from Senior and Management
+          positions, benefit from their rich experiences and knowledge of the
+          industry. <br /> They will also help you navigate your current
+          challenges as well as challenges you are likely going to encounter in
+          the future. <br /> You will also build strong and lifelong
+          professional relationship, and connections. <br /> By the time you
+          finish this program, you will be able to clearly define and set your
+          career goals, be guided to achieve them, receive and apply
+          constructive feedback necessary to achieve those goals. <br />
+          You will chart your career path and build new skills needed to take on
+          new roles, challenge yourself and rise to higher positions in your
+          career.
         </p>
       </section>
       <section className="team-wrapper">
@@ -186,11 +183,12 @@ export default function Mwn() {
       </section>
 
       <section className="footnote">
+        <h5>Would you like to </h5>
         <ul>
-          <li> Sign up for membership</li>
-          <li> Become a volunteer</li>
-          <li> Find a local club near you</li>
-          <li> Upcoming Events</li>
+          <li> Sign up for membership ?</li>
+          <li> Become a volunteer ?</li>
+          <li> Find a local club near you ?</li>
+          <li> See Upcoming Events ?</li>
         </ul>
       </section>
     </HeadFoot>
