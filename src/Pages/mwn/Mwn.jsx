@@ -24,7 +24,7 @@ export default function Mwn() {
       <aside className="what-about-us">
         <div className="img">
           <source type="image/webp" srcSet="image.webp" />
-          <img src="/images/mwn.jpeg" alt="about-us" />
+          <img src="/images/mwn-hero.jpeg" alt="about-us" />
         </div>
         <div className="details">
           <h4 className="light-blue-bg-text">MEDPAU WOMEN NETWORK (MWN) </h4>

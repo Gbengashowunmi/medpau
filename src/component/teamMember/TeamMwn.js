@@ -54,45 +54,46 @@ export default function TeamMwn() {
     <Slider {...settings}>
       <div className="item">
         <TeamMember
-          image="/images/MD-PIX-2.jpeg"
+          image="/images/rejoice.jpeg"
           name="REJOICE AZODO-PAUL"
-          position="MANAGING DIRECTOR"
+          position="Founder and managing director"
+        />
+      </div>
+      <div className="item">
+        <TeamMember
+          image="/images/ESTHER.jpg"
+          name="GODWINS ESTHER"
+          position="President"
+        />
+      </div>
+      <div className="item">
+        <TeamMember
+          image="/images/promise 2.jpg"
+          name="promise Iheanacho"
+          position="Vice President"
+        />
+      </div>
+      <div className="item">
+        <TeamMember
+          image="/images/blessing.jpeg"
+          name="Blessing Opara"
+          position="Pr & Communications"
         />
       </div>
 
       <div className="item">
         <TeamMember
-          image="/images/DareAfolabi.jpeg"
-          name="Dare Afolabi"
-          position="Financial Consultant"
+          image="/images/judith.jpeg"
+          name="Judith Obasi"
+          position="Programs Coordinator
+"
         />
       </div>
       <div className="item">
         <TeamMember
-          image="/images/ESTHER.jpg"
-          name="GODWINS ESTHER"
-          position="BUSINESS DEV. MANAGER"
-        />
-      </div>
-      <div className="item">
-        <TeamMember
-          image="/images/ESTHER.jpg"
-          name="GODWINS ESTHER"
-          position="BUSINESS DEV. MANAGER"
-        />
-      </div>
-      <div className="item">
-        <TeamMember
-          image="/images/ESTHER.jpg"
-          name="GODWINS ESTHER"
-          position="BUSINESS DEV. MANAGER"
-        />
-      </div>
-      <div className="item">
-        <TeamMember
-          image="/images/ESTHER.jpg"
-          name="GODWINS ESTHER"
-          position="BUSINESS DEV. MANAGER"
+          image="/images/debby.jpeg"
+          name="Deborah Ayeko"
+          position="Director Special Programs"
         />
       </div>
     </Slider>
