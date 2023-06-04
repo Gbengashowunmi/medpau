@@ -25,6 +25,23 @@
     gap: 1rem;
   }
 }
+.core_values{
+  width: 100%;
+  border: 2px solid hotpink;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  .values_wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.core_value{
+  width: fit-content;
+  border: 2px solid red;
+  border-radius: 10px;
+  background-color: var(--clr-white);
+}
+
 
 // .container {
 //   position: relative;

@@ -25,12 +25,22 @@ export default function HeadFoot({ children, pageTitle, description }) {
   //   setShowShopCategory(!showShopCategory);
   // };
 
-  // terms and cndition
+  // terms and condition
   const [showTerms, setShowTerms] = useState(false);
   const handleTerms = () => {
     setShowTerms(true);
   };
-  //modal
+
+  // mwp modal
+
+  const [openMwpModal, setOpenMwpModal] = useState(false);
+  const handleOpenMwpModal = () => setOpenMwpModal(true);
+  const handleCloseMwpModal = () => {
+    setOpenMwpModal(false);
+    setShowTerms(false);
+  };
+
+  // healthvest modal
   const [openModal, setOpenModal] = useState(false);
   const handleOpenModal = () => setOpenModal(true);
   const handleCloseModal = () => {
@@ -38,6 +48,7 @@ export default function HeadFoot({ children, pageTitle, description }) {
     setShowTerms(false);
   };
 
+  //handle menu toggler
   const handleToggle = () => {
     setIsOpen(!isOpen);
     // setShowShopCategory(false);
@@ -147,18 +158,20 @@ export default function HeadFoot({ children, pageTitle, description }) {
               </MenuItem>
             </NavLink>
           </Menu>
-
           {/* shop dropdown ends  */}
 
           <NavLink to="/service">
             <li>Service</li>
           </NavLink>
           <NavLink to="/our-blogs">
-            <li>Our Blog</li>
+            <li>Blog</li>
           </NavLink>
           <NavLink to="/mgtp">
             <li>Careers</li>
           </NavLink>
+          {/* <NavLink to="/medpau-women-network"> */}
+            <li onClick={handleOpenMwpModal}> Medpau Impact Projects(MIP)</li>
+          {/* </NavLink> */}
           <NavLink to="/event">
             <li>IWD</li>
           </NavLink>
@@ -170,6 +183,49 @@ export default function HeadFoot({ children, pageTitle, description }) {
             Healthvest
           </Button>
         </ul>
+
+        {/* modal for mwn  */}
+
+        <Modal
+          open={openMwpModal}
+          onClose={handleCloseMwpModal}
+          aria-labelledby="modal-modal-title"
+          aria-describedby="modal-modal-description"
+        >
+          <div className="healthvest_wrapper">
+            {/* //cancel or close modal button  */}
+            <div className="cancel" onClick={handleCloseMwpModal}>
+              X
+            </div>
+
+            {/* modal header  */}
+            {
+              <>
+                <h2 className="light-blue-bg-text">What do you want to do?</h2>
+                <div className="modal-btns">
+                  <ul>
+                    <NavLink to="/medpau-women-network">
+                      <Button className="appointment-btn">
+                        Medpau Women Network
+                      </Button>
+                    </NavLink>
+                    <NavLink to="/medpau-women-network">
+                      <Button className="appointment-btn">
+                        Medpau Graduate Training Program
+                      </Button>
+                    </NavLink>
+                    <NavLink to="/event">
+                      <Button className="appointment-btn">Medpau Events</Button>
+                    </NavLink>
+                    <NavLink to="/faq">
+                      <Button className="appointment-btn">FAQ</Button>
+                    </NavLink>
+                  </ul>
+                </div>
+              </>
+            }
+          </div>
+        </Modal>
 
         {/* modal for healthvest  */}
         <Modal
@@ -320,7 +376,7 @@ export default function HeadFoot({ children, pageTitle, description }) {
               {" "}
               <li>
                 <FaChevronRight />
-                Medpau Women Network
+                Medpau Women Network (MWN)
               </li>
             </NavLink>
             <NavLink

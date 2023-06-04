@@ -15,7 +15,10 @@ export default function Mwn() {
     { head: "Our Vision", body: "" },
   ];
   return (
-    <HeadFoot pageTitle="MGTP" description="medpau Graduate Trainee Program">
+    <HeadFoot
+      pageTitle="Medpau Women Network"
+      description="Medpau Women Network"
+    >
       <PageHead
         heading="Medpau Women Network"
         image="/images/breadcrumb-image-1.jpg"
@@ -93,10 +96,13 @@ export default function Mwn() {
                 humanitarian growth through empowerment of the people.
               </p>
             </div>
-            <div className="vision_mission">
-              <h3>OUR CORE VALUES</h3>
+          </div>
+
+          <div className="core_values">
+            <div>
+              <h3>Our Core Values</h3>
               <p>
-                ur values are that all women, not just in the healthcare
+                our values are that all women, not just in the healthcare
                 community alone, become self-sustaining, well respected,
                 authentic, and truly empowered. The MWN is committed to
                 enhancing women's skills to support their advancement in their
@@ -105,51 +111,67 @@ export default function Mwn() {
                 and grow and get better, stronger, and smarter.
               </p>
             </div>
-            <div className="vision_mission">
-              <h3>Integrity</h3>
-              <p>
-                We will never create or communicate in any community that
-                undermines and demeans women we exist to nurture. We make
-                ourselves accountable to the highest integrity by impacting
-                women to bring them to their highest potential and facilitate a
-                long-term positive change in both their professional and
-                personal lives.
-              </p>
-            </div>
-            <div className="vision_mission">
-              <h3>Empowerment</h3>
-              <p>
-                Our goal as a community is to empower women and young girls
-                while also creating inclusive, open and prosperous societies. In
-                doing so, we will ensure to uplift women in a non-competitive
-                environment and provide women a safe and positive space to grow
-                and build skills
-              </p>
-            </div>
-            <div className="vision_mission">
-              <h3>Resilience</h3>
-              <p>
-                We see the strength and courage of women everyday to push
-                through boundaries and obstacles in a male dominated world and
-                their ability to never give up. While we strive to inspire and
-                encourage them, they in turn inspire us to stay focused and
-                committed to our purpose as a community
-              </p>
-            </div>
-            <div className="vision_mission">
-              <h3>Leadership Development</h3>
-              <p>
-                Our goal is to provide women with the knowledge of networking
-                and innovative skills to build them up to their maximum
-                potentials. We offer them the know-how, tools, and connections
-                to help them attain professional success. In doing so, we can be
-                certain to develop talents within the network to enhance their
-                skills
-              </p>
+            <div className="values_wrapper">
+              <div className="core_value">
+                <h3>Integrity</h3>
+                <p>
+                  We will never create or communicate in any community that
+                  undermines and demeans women we exist to nurture. We make
+                  ourselves accountable to the highest integrity by impacting
+                  women to bring them to their highest potential and facilitate
+                  a long-term positive change in both their professional and
+                  personal lives.
+                </p>
+              </div>
+              <div className="core_value">
+                <h3>Empowerment</h3>
+                <p>
+                  Our goal as a community is to empower women and young girls
+                  while also creating inclusive, open and prosperous societies.
+                  In doing so, we will ensure to uplift women in a
+                  non-competitive environment and provide women a safe and
+                  positive space to grow and build skills
+                </p>
+              </div>
+              <div className="core_value">
+                <h3>Resilience</h3>
+                <p>
+                  We see the strength and courage of women everyday to push
+                  through boundaries and obstacles in a male dominated world and
+                  their ability to never give up. While we strive to inspire and
+                  encourage them, they in turn inspire us to stay focused and
+                  committed to our purpose as a community
+                </p>
+              </div>
+              <div className="core_value">
+                <h3>Leadership Development</h3>
+                <p>
+                  Our goal is to provide women with the knowledge of networking
+                  and innovative skills to build them up to their maximum
+                  potentials. We offer them the know-how, tools, and connections
+                  to help them attain professional success. In doing so, we can
+                  be certain to develop talents within the network to enhance
+                  their skills
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </section>
+      {/* core values  */}
+      <section className="choose-us">
+        <h3 className="light-blue-bg-text">Our Core Values</h3>
+        <p className="why_sgn_up">
+          our values are that all women, not just in the healthcare community
+          alone, become self-sustaining, well respected, authentic, and truly
+          empowered. The MWN is committed to enhancing women's skills to support
+          their advancement in their respective workplace. We are a learning
+          organization as we encourage our women to take risks and make
+          mistakes, to learn and grow and get better, stronger, and smarter.
+        </p>
+      </section>
+
+      {/* why sign up  */}
       <section className="choose-us">
         <h3 className="light-blue-bg-text">
           Why sign up for MWN Mentoring Program?
@@ -177,6 +199,8 @@ export default function Mwn() {
           career.
         </p>
       </section>
+
+      {/* team members  */}
       <section className="team-wrapper">
         <h4 className="light-blue-bg-text head">Meet The Team</h4>
         <TeamMwn />

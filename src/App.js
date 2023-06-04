@@ -22,36 +22,37 @@ import DeliveryForm from "./Pages/delivery/DeliveryForm";
 import Error404 from "./Pages/404/Error404";
 import OurBlogs from "./Pages/ourBlogs/OurBlogs";
 import Mwn from "./Pages/mwn/Mwn";
+import MwnForm from "./Pages/mwn/MwnForm";
   
 AOS.init();
 function App() {
   return (
     <div className="App">
-      <ChatMuna/>
+      <ChatMuna />
       <BrowserRouter>
-      {/* scroll to top icon  */}
-      <ScrollToTop className="scroll_up" smooth={true} />
-      {/* scroll to top of the page on new page  */}
-      <ScrollToTopNav/>
+        {/* scroll to top icon  */}
+        <ScrollToTop className="scroll_up" smooth={true} />
+        {/* scroll to top of the page on new page  */}
+        <ScrollToTopNav />
 
-      <Routes>
-        <Route path="/" element={<LandingPage/>}></Route>
-        <Route path="about" element={<About/>}></Route>
-        <Route path="shop" element={<Shop/>}></Route>
-        <Route path="payment" element={<Payment/>}></Route>
-        <Route path="mgtp" element={<Mgtp/>}></Route>
-        <Route path="event" element={<Event/>}></Route>
-        <Route path="financial-support" element={<HealthVestForm/>}></Route>
-        <Route path="our-blogs" element={<OurBlogs/>}></Route>
-        <Route path="faq" element={<Faq/>}></Route>
-        <Route path="details/:id" element={<ProductDetail/>}></Route>
-        <Route path="shop/:category" element={<Category/>}></Route>
-        <Route path="service" element={<Service/>}></Route>
-        <Route path="medpau-women-network" element={<Mwn/>}></Route>
-        <Route path="deliveryform" element={<DeliveryForm/>}></Route>
-        <Route path='*' element={<Error404 />}/>
-      </Routes>
-
+        <Routes>
+          <Route path="/" element={<LandingPage />}></Route>
+          <Route path="about" element={<About />}></Route>
+          <Route path="shop" element={<Shop />}></Route>
+          <Route path="payment" element={<Payment />}></Route>
+          <Route path="mgtp" element={<Mgtp />}></Route>
+          <Route path="event" element={<Event />}></Route>
+          <Route path="financial-support" element={<HealthVestForm />}></Route>
+          <Route path="medpau-women-network-form" element={<MwnForm />}></Route>
+          <Route path="our-blogs" element={<OurBlogs />}></Route>
+          <Route path="faq" element={<Faq />}></Route>
+          <Route path="details/:id" element={<ProductDetail />}></Route>
+          <Route path="shop/:category" element={<Category />}></Route>
+          <Route path="service" element={<Service />}></Route>
+          <Route path="medpau-women-network" element={<Mwn />}></Route>
+          <Route path="deliveryform" element={<DeliveryForm />}></Route>
+          <Route path="*" element={<Error404 />} />
+        </Routes>
       </BrowserRouter>
     </div>
   );
