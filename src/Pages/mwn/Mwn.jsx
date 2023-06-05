@@ -5,15 +5,18 @@ import "./mwn.scss";
 import ChooseUsCard from "../../component/chooseUsCard/ChooseUsCard";
 import TeamMember from "../../component/teamMember/TeamMember";
 import TeamMwn from "../../component/teamMember/TeamMwn";
+import { Link, NavLink } from "react-router-dom";
+import { Button, Modal } from "@mui/material";
+import { useState } from "react";
 
 export default function Mwn() {
-  const aboutMwn = [
-    { head: "Our Vision", body: "" },
-    { head: "Our Vision", body: "" },
-    { head: "Our Vision", body: "" },
-    { head: "Our Vision", body: "" },
-    { head: "Our Vision", body: "" },
-  ];
+  // mwp modal
+  const [openMwpModal, setOpenMwpModal] = useState(false);
+  const handleOpenMwpModal = () => setOpenMwpModal(true);
+  const handleCloseMwpModal = () => {
+    setOpenMwpModal(false);
+    // setShowTerms(false);
+  };
   return (
     <HeadFoot
       pageTitle="Medpau Women Network"
@@ -99,10 +102,10 @@ export default function Mwn() {
           </div>
 
           <div className="core_values">
-            <div>
+            <div className="core_value_head">
               <h3>Our Core Values</h3>
               <p>
-                our values are that all women, not just in the healthcare
+                Our values are that all women, not just in the healthcare
                 community alone, become self-sustaining, well respected,
                 authentic, and truly empowered. The MWN is committed to
                 enhancing women's skills to support their advancement in their
@@ -113,7 +116,7 @@ export default function Mwn() {
             </div>
             <div className="values_wrapper">
               <div className="core_value">
-                <h3>Integrity</h3>
+                <h4>Integrity</h4>
                 <p>
                   We will never create or communicate in any community that
                   undermines and demeans women we exist to nurture. We make
@@ -124,7 +127,7 @@ export default function Mwn() {
                 </p>
               </div>
               <div className="core_value">
-                <h3>Empowerment</h3>
+                <h4>Empowerment</h4>
                 <p>
                   Our goal as a community is to empower women and young girls
                   while also creating inclusive, open and prosperous societies.
@@ -134,7 +137,7 @@ export default function Mwn() {
                 </p>
               </div>
               <div className="core_value">
-                <h3>Resilience</h3>
+                <h4>Resilience</h4>
                 <p>
                   We see the strength and courage of women everyday to push
                   through boundaries and obstacles in a male dominated world and
@@ -144,7 +147,7 @@ export default function Mwn() {
                 </p>
               </div>
               <div className="core_value">
-                <h3>Leadership Development</h3>
+                <h4>Leadership Development</h4>
                 <p>
                   Our goal is to provide women with the knowledge of networking
                   and innovative skills to build them up to their maximum
@@ -209,11 +212,49 @@ export default function Mwn() {
       <section className="footnote">
         <h5>Would you like to </h5>
         <ul>
-          <li> Sign up for membership ?</li>
+          <Link to="/mwn-form">
+            <li> Sign up for membership ?</li>
+          </Link>
           <li> Become a volunteer ?</li>
-          <li> Find a local club near you ?</li>
+          <li onClick={handleOpenMwpModal}> Sign up for mentorship ?</li>
           <li> See Upcoming Events ?</li>
         </ul>
+
+        {/* modal for mwn  */}
+
+        <Modal
+          open={openMwpModal}
+          onClose={handleCloseMwpModal}
+          aria-labelledby="modal-modal-title"
+          aria-describedby="modal-modal-description"
+        >
+          <div className="healthvest_wrapper">
+            {/* //cancel or close modal button  */}
+            <div className="cancel" onClick={handleCloseMwpModal}>
+              X
+            </div>
+
+            {/* modal header  */}
+              <>
+                <h2 className="light-blue-bg-text">Sign up for mentorship</h2>
+                <div className="modal-btns">
+                  <ul>
+                    <NavLink to="/mentee-form">
+                      <Button className="appointment-btn">
+                        Sign up as a Mentee
+                      </Button>
+                    </NavLink>
+                    <NavLink to="/mentor-form">
+                      <Button className="appointment-btn">
+                        Sign up as a Mentor
+                      </Button>
+                    </NavLink>
+                  </ul>
+                </div>
+              </>
+            
+          </div>
+        </Modal>
       </section>
     </HeadFoot>
   );

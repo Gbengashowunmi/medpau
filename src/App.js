@@ -23,6 +23,8 @@ import Error404 from "./Pages/404/Error404";
 import OurBlogs from "./Pages/ourBlogs/OurBlogs";
 import Mwn from "./Pages/mwn/Mwn";
 import MwnForm from "./Pages/mwn/MwnForm";
+import MenteeForm from "./Pages/mwn/MenteeForm";
+import MentorForm from "./Pages/mwn/MentorForm";
   
 AOS.init();
 function App() {
@@ -50,6 +52,9 @@ function App() {
           <Route path="shop/:category" element={<Category />}></Route>
           <Route path="service" element={<Service />}></Route>
           <Route path="medpau-women-network" element={<Mwn />}></Route>
+          <Route path="mwn-form" element={<MwnForm />}></Route>
+          <Route path="mentee-form" element={<MenteeForm />}></Route>
+          <Route path="mentor-form" element={<MentorForm />}></Route>
           <Route path="deliveryform" element={<DeliveryForm />}></Route>
           <Route path="*" element={<Error404 />} />
         </Routes>
