@@ -166,9 +166,7 @@ export default function HeadFoot({ children, pageTitle, description }) {
           <NavLink to="/our-blogs">
             <li>Blog</li>
           </NavLink>
-          <NavLink to="/mgtp">
-            <li>Careers</li>
-          </NavLink>
+
           {/* <NavLink to="/medpau-women-network"> */}
           <li onClick={handleOpenMwpModal}> Medpau Impact Projects(MIP)</li>
           {/* </NavLink> */}
@@ -212,8 +210,12 @@ export default function HeadFoot({ children, pageTitle, description }) {
                         Medpau Graduate Training Program
                       </Button>
                     </NavLink>
+
                     <NavLink to="/event">
                       <Button className="appointment-btn">Medpau Events</Button>
+                    </NavLink>
+                    <NavLink to="/mgtp">
+                      <Button className="appointment-btn">Careers</Button>
                     </NavLink>
                     {/* <NavLink to="/event">
                       <li>IWD</li>

@@ -100,7 +100,8 @@ export default function Mwn() {
               </p>
             </div>
           </div>
-
+          
+          {/* core values  */}
           <div className="core_values">
             <div className="core_value_head">
               <h3>Our Core Values</h3>
@@ -160,18 +161,6 @@ export default function Mwn() {
             </div>
           </div>
         </div>
-      </section>
-      {/* core values  */}
-      <section className="choose-us">
-        <h3 className="light-blue-bg-text">Our Core Values</h3>
-        <p className="why_sgn_up">
-          our values are that all women, not just in the healthcare community
-          alone, become self-sustaining, well respected, authentic, and truly
-          empowered. The MWN is committed to enhancing women's skills to support
-          their advancement in their respective workplace. We are a learning
-          organization as we encourage our women to take risks and make
-          mistakes, to learn and grow and get better, stronger, and smarter.
-        </p>
       </section>
 
       {/* why sign up  */}
@@ -235,24 +224,23 @@ export default function Mwn() {
             </div>
 
             {/* modal header  */}
-              <>
-                <h2 className="light-blue-bg-text">Sign up for mentorship</h2>
-                <div className="modal-btns">
-                  <ul>
-                    <NavLink to="/mentee-form">
-                      <Button className="appointment-btn">
-                        Sign up as a Mentee
-                      </Button>
-                    </NavLink>
-                    <NavLink to="/mentor-form">
-                      <Button className="appointment-btn">
-                        Sign up as a Mentor
-                      </Button>
-                    </NavLink>
-                  </ul>
-                </div>
-              </>
-            
+            <>
+              <h2 className="light-blue-bg-text">Sign up for mentorship</h2>
+              <div className="modal-btns">
+                <ul>
+                  <NavLink to="/mentee-form">
+                    <Button className="appointment-btn">
+                      Sign up as a Mentee
+                    </Button>
+                  </NavLink>
+                  <NavLink to="/mentor-form">
+                    <Button className="appointment-btn">
+                      Sign up as a Mentor
+                    </Button>
+                  </NavLink>
+                </ul>
+              </div>
+            </>
           </div>
         </Modal>
       </section>
