@@ -82,7 +82,16 @@ export default function Mwn() {
 
         <div className="choose-us-wrapper">
           <div className="vision_wrapper mwp_vision">
-            <div className="vision_mission">
+            <div
+              className="vision_mission"
+              data-aos="zoom-in"
+              data-aos-offset="20"
+              data-aos-delay="10"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="false"
+            >
               <h3>Our Mission</h3>
               <p>
                 Building a community of impact-driven women to help tear down
@@ -91,7 +100,16 @@ export default function Mwn() {
                 equity, and fair treatment of women in healthcare.
               </p>
             </div>
-            <div className="vision_mission">
+            <div
+              className="vision_mission"
+              data-aos="zoom-in"
+              data-aos-offset="20"
+              data-aos-delay="10"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="false"
+            >
               <h3>Our Vision</h3>
               <p>
                 To create a network of women who are confident, self-reliant and
@@ -100,11 +118,11 @@ export default function Mwn() {
               </p>
             </div>
           </div>
-          
+
           {/* core values  */}
           <div className="core_values">
-            <div className="core_value_head">
-              <h3>Our Core Values</h3>
+            <div className="core_value_head ">
+              <h3 className="light-blue-bg-text">Our Core Values</h3>
               <p>
                 Our values are that all women, not just in the healthcare
                 community alone, become self-sustaining, well respected,
@@ -116,8 +134,38 @@ export default function Mwn() {
               </p>
             </div>
             <div className="values_wrapper">
-              <div className="core_value">
+              <div
+                className="core_value"
+                data-aos="zoom-in"
+                data-aos-offset="20"
+                data-aos-delay="10"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true"
+                data-aos-once="false"
+              >
+                <h4>Empowerment</h4>
+                <img src="/images/background_maps.jpg" alt="" />
+                <p>
+                  Our goal as a community is to empower women and young girls
+                  while also creating inclusive, open and prosperous societies.
+                  In doing so, we will ensure to uplift women in a
+                  non-competitive environment and provide women a safe and
+                  positive space to grow and build skills
+                </p>
+              </div>
+              <div
+                className="core_value"
+                data-aos="zoom-in"
+                data-aos-offset="20"
+                data-aos-delay="10"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true"
+                data-aos-once="false"
+              >
                 <h4>Integrity</h4>
+                <img src="/images/her-bg-slider.jpg" alt="" />
                 <p>
                   We will never create or communicate in any community that
                   undermines and demeans women we exist to nurture. We make
@@ -127,18 +175,20 @@ export default function Mwn() {
                   personal lives.
                 </p>
               </div>
-              <div className="core_value">
-                <h4>Empowerment</h4>
-                <p>
-                  Our goal as a community is to empower women and young girls
-                  while also creating inclusive, open and prosperous societies.
-                  In doing so, we will ensure to uplift women in a
-                  non-competitive environment and provide women a safe and
-                  positive space to grow and build skills
-                </p>
-              </div>
-              <div className="core_value">
+
+              <div
+                className="core_value"
+                data-aos="zoom-in"
+                data-aos-offset="20"
+                data-aos-delay="10"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true"
+                data-aos-once="false"
+              >
                 <h4>Resilience</h4>
+                <img src="/images/card_image_02.jpg" alt="" />
+
                 <p>
                   We see the strength and courage of women everyday to push
                   through boundaries and obstacles in a male dominated world and
@@ -147,8 +197,19 @@ export default function Mwn() {
                   committed to our purpose as a community
                 </p>
               </div>
-              <div className="core_value">
+              <div
+                className="core_value"
+                data-aos="zoom-in"
+                data-aos-offset="20"
+                data-aos-delay="10"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true"
+                data-aos-once="false"
+              >
                 <h4>Leadership Development</h4>
+                <img src="/images/images (1).jpg" alt="" />
+
                 <p>
                   Our goal is to provide women with the knowledge of networking
                   and innovative skills to build them up to their maximum
