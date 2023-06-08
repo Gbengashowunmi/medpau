@@ -32,6 +32,7 @@
   border: 2px solid var(--clr-secondary);
   margin: 1rem auto;
   width: 70%;
+  // background-image: url("about_us.jpg");
 }
 .core_values {
   width: 95%;
@@ -44,6 +45,7 @@
   .core_value_head {
     // border: 2px solid lawngreen;
     // text-align: center;
+    margin: 1rem 0 ;
     display: flex;
     flex-direction: column;
     // justify-content: center;
@@ -69,7 +71,18 @@
   // color: var(--clr-white);
   padding: 0.5rem 0.5rem;
   height: fit-content;
+  position: relative;
+.value_head{
+  position: absolute;
+  top: -10px;
+  // left: 0;
+  border-radius: 5px;
+  background-color: var(--clr-secondary);
+  color: var(--clr-white);
+  padding: .3rem .5rem;
+  font-size: 90%;
 
+}
   // text-align: left;
   p {
     text-align: left;
@@ -187,7 +200,7 @@
     }
     .values_wrapper {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr;
       gap: 1rem;
       p {
         font-size: smaller;
@@ -197,9 +210,13 @@
   .footnote {
     ul {
       width: 90%;
+    gap: 1rem;
+
       grid-template-columns: 1fr 1fr;
       li {
         font-size: 80%;
+      padding: 0.5rem .5rem;
+
       }
     }
   }

@@ -34,7 +34,7 @@ export default function Mwn() {
         </div>
         <div className="details">
           <h4 className="light-blue-bg-text">MEDPAU WOMEN NETWORK (MWN) </h4>
-          <h3>Mentoring Program</h3>
+          <h4>Mentoring Program</h4>
           <h4 className="light-blue-bg-text">INTRODUCTION</h4>
           <p>
             The Medpau Women Network <br /> A network created to connect and
@@ -82,6 +82,7 @@ export default function Mwn() {
 
         <div className="choose-us-wrapper">
           <div className="vision_wrapper mwp_vision">
+            {/* mission  */}
             <div
               className="vision_mission"
               data-aos="zoom-in"
@@ -100,6 +101,7 @@ export default function Mwn() {
                 equity, and fair treatment of women in healthcare.
               </p>
             </div>
+            {/* vision  */}
             <div
               className="vision_mission"
               data-aos="zoom-in"
@@ -117,6 +119,8 @@ export default function Mwn() {
                 humanitarian growth through empowerment of the people.
               </p>
             </div>
+
+            {/* <img src="/images/about_us.jpg" alt="" /> */}
           </div>
 
           {/* core values  */}
@@ -144,7 +148,7 @@ export default function Mwn() {
                 data-aos-mirror="true"
                 data-aos-once="false"
               >
-                <h4>Empowerment</h4>
+                <h5 className="value_head">Empowerment</h5>
                 <img src="/images/background_maps.jpg" alt="" />
                 <p>
                   Our goal as a community is to empower women and young girls
@@ -164,7 +168,7 @@ export default function Mwn() {
                 data-aos-mirror="true"
                 data-aos-once="false"
               >
-                <h4>Integrity</h4>
+                <h5 className="value_head">Integrity</h5>
                 <img src="/images/her-bg-slider.jpg" alt="" />
                 <p>
                   We will never create or communicate in any community that
@@ -186,7 +190,7 @@ export default function Mwn() {
                 data-aos-mirror="true"
                 data-aos-once="false"
               >
-                <h4>Resilience</h4>
+                <h5 className="value_head">Resilience</h5>
                 <img src="/images/card_image_02.jpg" alt="" />
 
                 <p>
@@ -207,7 +211,7 @@ export default function Mwn() {
                 data-aos-mirror="true"
                 data-aos-once="false"
               >
-                <h4>Leadership Development</h4>
+                <h5 className="value_head">Leadership Development</h5>
                 <img src="/images/images (1).jpg" alt="" />
 
                 <p>
