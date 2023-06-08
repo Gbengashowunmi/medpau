@@ -9,7 +9,7 @@ import { Link, NavLink } from "react-router-dom";
 import { Button, Modal } from "@mui/material";
 import { useState } from "react";
 
-export default function Mwn() {
+export default function Mwn2() {
   // mwp modal
   const [openMwpModal, setOpenMwpModal] = useState(false);
   const handleOpenMwpModal = () => setOpenMwpModal(true);
@@ -27,7 +27,89 @@ export default function Mwn() {
         image="/images/breadcrumb-image-1.jpg"
         capsHead="MWN"
       />
-      <aside className="what-about-us">
+
+      <p>
+        We are an impact driven community, providing support, mentorship and
+        platform for women in healthcare to grow, develop their capacity and
+        rise in their career. Our goal is to build a network of impact driven
+        women tearing down barriers, challenging the status, driving change,
+        rise to top to leadership positions and in turn, create opportunities
+        for those coming behind them.
+      </p>
+
+      <h4>WHAT WE DO</h4>
+      <div className="what_we_do_wrapper">
+        <div className="what_we_do">
+          <h5>Networking</h5>
+          <p>
+            Networking more than ever is the key to getting ahead. We are a
+            create a community where professional women in healthcare can
+            connect, receive or give support and build or strengthen
+            relationships and connections within the industry.
+          </p>
+        </div>
+        <div className="what_we_do">
+          <h5>Capacity Building</h5>
+          <p>
+            Developing and strengthening the instincts, and abilities of women
+            in healthcare and empowering them with the skills they need to
+            adapt, survive, and thrive in a fast-changing world. This can be in
+            form of workshops, or seminars.
+          </p>
+        </div>
+        <div className="what_we_do">
+          <h5>Mentorship</h5>
+          <p>
+            Providing a safe place where women in their entry and mid-level
+            career can ask question, gain deeper insights about the industry,
+            receive feedback and criticism needed grow. It also provides
+            opportunities for more experienced women to impact younger
+            professionals and give back to the society
+          </p>
+        </div>
+        <div className="what_we_do">
+          <h5>Leadership Development</h5>
+          <p>
+            Grooming young professional women to challenges status quo, and
+            redefine possibilities. The essence in transformation that comes
+            from within, so they can rise up to managerial and leadership roles.
+            They will in turn become advocates and create opportunities for
+            coming behind.
+          </p>
+        </div>
+      </div>
+
+      <h4>
+        With confidence, capacity, community, and the right collaborations, any
+        woman can achieve anything.
+      </h4>
+
+      <section>
+        <h4>MWN MENTORING PROGRAM</h4>
+
+        <p>
+          Medpau Women Network is an Impact program under Medpau International
+          Limited, designed to provide empowerment to women in healthcare
+          careers, facilitating career growth and professional development. The
+          aim of this initiative is to groom women, especially in the healthcare
+          industry, towards a great career start and endless progress. The
+          Women's network also provides a sense of community to women, providing
+          them with adequate support and a safe environment which encourages
+          inclusion, networking and personal development.
+        </p>
+        <p>
+          <strong>Mission:</strong>To build a community of impact-driven women
+          who would be equipped to rise above barriers in the work place,
+          creating more growth opportunities for healthcare career women in
+          Nigeria, and beyond.
+        </p>
+        <p>
+          <strong>Vision:</strong>To create a network of women who are
+          confident, self-reliant and impact-driven leaders in the society, who
+          contribute to societal development and human empowerment.
+        </p>
+      </section>
+      {/* <aside className="what-about-us">
         <div className="img">
           <source type="image/webp" srcSet="image.webp" />
           <img src="/images/mwn-hero.jpeg" alt="about-us" />
@@ -45,7 +127,7 @@ export default function Mwn() {
             supportive community a safe space for women to achieve success in
             their professional endeavors.
           </p>
-          {/* why sign up  */}
+
           <section className="choose-us">
             <h3 className="light-blue-bg-text">
               Why sign up for MWN Mentoring Program?
@@ -75,7 +157,7 @@ export default function Mwn() {
             </p>
           </section>
         </div>
-      </aside>
+      </aside> */}
 
       <section className="about_mwn">
         <h3 className="light-blue-bg-text">About MWN</h3>
@@ -226,6 +308,35 @@ export default function Mwn() {
             </div>
           </div>
         </div>
+      </section>
+
+      {/* why sign up  */}
+      <section className="choose-us">
+        <h3 className="light-blue-bg-text">
+          Why sign up for MWN Mentoring Program?
+        </h3>
+        <p className="why_sgn_up">
+          The MWN Mentoring program is designed to facilitates professional
+          growth at different stages in your career journey, through
+          collaborative learning, hands on projects, group discussion,
+          peer-to-peer learning, 1-on-1 conversations. <br /> It creates a free
+          and safe space where you to ask questions, receive support, build
+          confidence, gain new perspectives and deeper insight into the
+          Healthcare industry. <br />
+          You will engage in group discussions, 1-on-1 as well as peer-to-peer
+          learning. You will also engage with leaders from Senior and Management
+          positions, benefit from their rich experiences and knowledge of the
+          industry. <br /> They will also help you navigate your current
+          challenges as well as challenges you are likely going to encounter in
+          the future. <br /> You will also build strong and lifelong
+          professional relationship, and connections. <br /> By the time you
+          finish this program, you will be able to clearly define and set your
+          career goals, be guided to achieve them, receive and apply
+          constructive feedback necessary to achieve those goals. <br />
+          You will chart your career path and build new skills needed to take on
+          new roles, challenge yourself and rise to higher positions in your
+          career.
+        </p>
       </section>
 
       {/* team members  */}

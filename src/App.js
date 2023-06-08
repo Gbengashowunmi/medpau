@@ -25,6 +25,7 @@ import Mwn from "./Pages/mwn/Mwn";
 import MwnForm from "./Pages/mwn/MwnForm";
 import MenteeForm from "./Pages/mwn/MenteeForm";
 import MentorForm from "./Pages/mwn/MentorForm";
+// import Mwn2 from "./Pages/mwn/Mwn2";
   
 AOS.init();
 function App() {
@@ -52,6 +53,7 @@ function App() {
           <Route path="shop/:category" element={<Category />}></Route>
           <Route path="service" element={<Service />}></Route>
           <Route path="medpau-women-network" element={<Mwn />}></Route>
+          {/* <Route path="medpau-women-network" element={<Mwn2 />}></Route> */}
           <Route path="mwn-form" element={<MwnForm />}></Route>
           <Route path="mentee-form" element={<MenteeForm />}></Route>
           <Route path="mentor-form" element={<MentorForm />}></Route>
