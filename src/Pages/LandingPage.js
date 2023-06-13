@@ -21,16 +21,21 @@ export default function LandingPage() {
   const [openOnLoad, setOpenOnLoad] = useState(false);
 
   useEffect(() => {
+    const hasModalBeenShown = localStorage.getItem("modalShown");
+
     setTimeout(() => {
-      setOpenOnLoad(true);
-    }, 7000);
+      if (!hasModalBeenShown) {
+        setOpenOnLoad(true);
+        localStorage.setItem("modalShown", "true");
+      }
+    }, 3000);
   }, []);
 
-  // close modal function 
-    const handleCloseMwpModal = () => {
-      setOpenOnLoad(false);
-      // setShowTerms(false);
-    };
+  // close modal function
+  const handleCloseMwpModal = () => {
+    setOpenOnLoad(false);
+    // setShowTerms(false);
+  };
   const handleclick = () => {
     setReadMore(!readMore);
   };
