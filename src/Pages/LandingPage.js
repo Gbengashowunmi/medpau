@@ -1,6 +1,6 @@
-import { Modal } from "@mui/material";
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Button, Modal } from "@mui/material";
+import React, { useEffect, useState } from "react";
+import { Link, NavLink } from "react-router-dom";
 // import Blog from "../component/blog/Blog";
 import Carousel from "../component/Carousel";
 import FeaturedSlider from "../component/FeaturedSlider";
@@ -17,6 +17,20 @@ export default function LandingPage() {
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
+  //open modal on load
+  const [openOnLoad, setOpenOnLoad] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setOpenOnLoad(true);
+    }, 7000);
+  }, []);
+
+  // close modal function 
+    const handleCloseMwpModal = () => {
+      setOpenOnLoad(false);
+      // setShowTerms(false);
+    };
   const handleclick = () => {
     setReadMore(!readMore);
   };
@@ -25,9 +39,57 @@ export default function LandingPage() {
       pageTitle="International Limited Home Page. sales of products, technical solutions, read."
       description="Welcome to medpau international limited, we offer sales of medical equipments and products, technical services solutions and financial support for instalmental purchase of expensive medical equipments/facilities. read"
     >
+      <Modal
+        open={openOnLoad}
+        onClose={handleCloseMwpModal}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
+        <div className="healthvest_wrapper">
+          {/* //cancel or close modal button  */}
+          <div className="cancel" onClick={handleCloseMwpModal}>
+            X
+          </div>
+
+          {/* modal header  */}
+          {
+            <>
+              <h2 className="light-blue-bg-text">What do you want to do?</h2>
+              <div className="modal-btns">
+                <ul>
+                  <NavLink to="/medpau-women-network">
+                    <Button className="appointment-btn">
+                      Medpau Women Network
+                    </Button>
+                  </NavLink>
+                  <NavLink to="/medpau-women-network">
+                    <Button className="appointment-btn">
+                      Medpau Graduate Training Program
+                    </Button>
+                  </NavLink>
+
+                  <NavLink to="/event">
+                    <Button className="appointment-btn">Medpau Events</Button>
+                  </NavLink>
+                  <NavLink to="/mgtp">
+                    <Button className="appointment-btn">Careers</Button>
+                  </NavLink>
+                  {/* <NavLink to="/event">
+                      <li>IWD</li>
+                    </NavLink> */}
+                  <NavLink to="/faq">
+                    <Button className="appointment-btn">FAQ</Button>
+                  </NavLink>
+                </ul>
+              </div>
+            </>
+          }
+        </div>
+      </Modal>
       <main>
         <Carousel />
       </main>
+
       <div className="hero-card-wrapper">
         <source type="image/webp" srcSet="image.webp" />
         <img src="/images/background_image_02.jpg" alt="card" />

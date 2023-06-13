@@ -149,7 +149,7 @@ export default function Mwn() {
                 data-aos-once="false"
               >
                 <h5 className="value_head">Empowerment</h5>
-                <img src="/images/background_maps.jpg" alt="" />
+                <img src="/images/empowerment.jpg" alt="" />
                 <p>
                   Our goal as a community is to empower women and young girls
                   while also creating inclusive, open and prosperous societies.
@@ -169,7 +169,7 @@ export default function Mwn() {
                 data-aos-once="false"
               >
                 <h5 className="value_head">Integrity</h5>
-                <img src="/images/her-bg-slider.jpg" alt="" />
+                <img src="/images/integrity.jpg" alt="" />
                 <p>
                   We will never create or communicate in any community that
                   undermines and demeans women we exist to nurture. We make
@@ -191,7 +191,7 @@ export default function Mwn() {
                 data-aos-once="false"
               >
                 <h5 className="value_head">Resilience</h5>
-                <img src="/images/card_image_02.jpg" alt="" />
+                <img src="/images/resilience.jpg" alt="" />
 
                 <p>
                   We see the strength and courage of women everyday to push
@@ -212,7 +212,7 @@ export default function Mwn() {
                 data-aos-once="false"
               >
                 <h5 className="value_head">Leadership Development</h5>
-                <img src="/images/images (1).jpg" alt="" />
+                <img src="/images/leadership.jpg" alt="" />
 
                 <p>
                   Our goal is to provide women with the knowledge of networking
