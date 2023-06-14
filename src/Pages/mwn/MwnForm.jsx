@@ -2,8 +2,16 @@ import React, { useState } from "react";
 import emailjs from "emailjs-com";
 // import "./contact.scss";
 import HeadFoot from "../../component/HeadFoot";
-import { Button, TextField } from "@mui/material";
-import { NavLink, useNavigate } from "react-router-dom";
+import {
+  Button,
+  FormControl,
+  FormControlLabel,
+  FormLabel,
+  Radio,
+  RadioGroup,
+  TextField,
+} from "@mui/material";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import { MdOutlineHome } from "react-icons/md";
 import { FaChevronRight } from "react-icons/fa";
 export default function MwnForm() {
@@ -14,9 +22,10 @@ export default function MwnForm() {
     full_name: "",
     email: "",
     number: "",
-    facility: "",
-    position: "",
-    equipment: "",
+    category: "",
+    job: "",
+    careerExpectations: "",
+    expectations: "",
   });
 
   const navigate = useNavigate();
@@ -27,11 +36,11 @@ export default function MwnForm() {
     });
     if (
       input.email &&
-      input.equipment &&
-      input.facility &&
       input.full_name &&
       input.number &&
-      input.position !== ""
+      input.job &&
+      input.careerExpectations &&
+      input.expectations !== ""
     ) {
       setDisable(false);
     }
@@ -42,10 +51,10 @@ export default function MwnForm() {
     e.preventDefault(); //This is important, i'm not sure why, but the email won't send without it
     emailjs
       .sendForm(
-        "service_9hc60zg",
-        "template_92wka7w",
+        "service_bdd9kp5",
+        "template_cv6ay63",
         e.target,
-        "1C9x_ChYylYmwyitQ"
+        "lq-1CPwM7o1yjL8MX"
       )
       .then(
         (result) => {
@@ -85,7 +94,7 @@ export default function MwnForm() {
             data-aos-mirror="true"
             data-aos-once="false"
           >
-            <h2>MWN</h2>
+            <h2>MENTEE FORM</h2>
             <p>
               <MdOutlineHome />
               <NavLink to="/">
@@ -99,6 +108,11 @@ export default function MwnForm() {
       </div>
       <form className="finance-form" onSubmit={sendEmail}>
         <h4>Kindly fill the form below to signup for Medpau Women Network</h4>
+        <p>
+          Do you want to be a Mentor ?
+          <Link to="/mentor-form"> Become a mentor </Link>
+          or mentee ? <Link to="/mentee-form">Become a mentee</Link>
+        </p>
         <p>{message}</p>
         <input type="hidden" name="contact_number" />
         <TextField
@@ -109,7 +123,6 @@ export default function MwnForm() {
           className="input"
           onChange={handleInput}
         />
-
         <TextField
           id="outlined-basic"
           label="Email"
@@ -128,26 +141,53 @@ export default function MwnForm() {
         />
         <TextField
           id="outlined-basic"
-          label="Name of Facility"
-          name="facility"
-          variant="outlined"
-          onChange={handleInput}
-          className="input"
-        />
-        <TextField
-          id="outlined-basic"
-          label="Position"
-          name="position"
+          label="Job role"
+          name="job"
           variant="outlined"
           className="input"
           onChange={handleInput}
         />
+        {/* //Categories */}
+        <FormControl>
+          <FormLabel id="demo-radio-buttons-group-label">
+            <strong>Category</strong>
+          </FormLabel>
+          <RadioGroup
+            aria-labelledby="demo-radio-buttons-group-label"
+            defaultValue="Student"
+            name="category"
+          >
+            <FormControlLabel
+              value="Student"
+              control={<Radio />}
+              label="Student"
+            />
+            <FormControlLabel
+              value="Professional"
+              control={<Radio />}
+              label="Professional"
+            />
+          </RadioGroup>
+        </FormControl>
+        {/* career expectations  */}
         <TextField
-          id="outlined-basic"
-          label="Equipment Needed/ Facility Setup"
-          name="equipment"
-          variant="outlined"
-          className="input"
+          id="outlined-multiline-static"
+          label="What is your career expectation?"
+          multiline
+          rows={5}
+          name="careerExpectations"
+          defaultValue="I expect "
+          onChange={handleInput}
+        />
+        <br />
+        {/* //expectations  */}
+        <TextField
+          id="outlined-multiline-static"
+          label="What are your expectations of the network?"
+          multiline
+          rows={5}
+          name="expectations"
+          defaultValue="I expect "
           onChange={handleInput}
         />
         <Button type="submit" value="Send" disabled={disable}>

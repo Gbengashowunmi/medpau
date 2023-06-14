@@ -185,7 +185,7 @@ export default function MenteeForm() {
         {/* //expectations  */}
         <TextField
           id="outlined-multiline-static"
-          label="What are you rexpectations?"
+          label="What are your expectations?"
           multiline
           rows={5}
           name="expectations"

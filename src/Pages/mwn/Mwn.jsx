@@ -33,7 +33,9 @@ export default function Mwn() {
           <img src="/images/mwn-hero.jpeg" alt="about-us" />
         </div>
         <div className="details">
-          <h4 className="light-blue-bg-text">ABOUT MEDPAU WOMEN NETWORK (MWN) </h4>
+          <h4 className="light-blue-bg-text">
+            ABOUT MEDPAU WOMEN NETWORK (MWN){" "}
+          </h4>
           <p>
             Medpau Women Network is an Impact program under Medpau International
             Limited, designed to provide empowerment to women in healthcare
@@ -42,20 +44,20 @@ export default function Mwn() {
             healthcare industry, towards a great career start and endless
             progress. The Women's network also provides a sense of community to
             women, providing them with adequate support and a safe environment
-            which encourages inclusion, networking and personal development. <br /> <br /> We
-            are an impact driven community, providing support, mentorship and
-            platform for women in healthcare to grow, develop their capacity and
-            rise in their career. Our goal is to build a network of impact
-            driven women tearing down barriers, challenging the status, driving
-            change, rise to top leadership positions and in turn, create
-            opportunities for those coming behind them.
+            which encourages inclusion, networking and personal development.{" "}
+            <br /> <br /> We are an impact driven community, providing support,
+            mentorship and platform for women in healthcare to grow, develop
+            their capacity and rise in their career. Our goal is to build a
+            network of impact driven women tearing down barriers, challenging
+            the status, driving change, rise to top leadership positions and in
+            turn, create opportunities for those coming behind them.
           </p>
         </div>
       </aside>
 
       {/* about mwn  */}
       <section className="about_mwn">
-        <h3 className="light-blue-bg-text">About MWN</h3>
+        <h3 className="light-blue-bg-text">What MWN stands for</h3>
 
         <div className="choose-us-wrapper">
           <div className="vision_wrapper mwp_vision">
@@ -293,6 +295,32 @@ export default function Mwn() {
         </p>
       </section>
 
+      {/* our programs  */}
+
+      <section className="our_programs choose-us">
+        <h3 className="light-blue-bg-text">Our Programs</h3>
+
+        <ul>
+          <li>
+            <strong> Career seminars:</strong> These are workshops and
+            presentations open to all students in the medical field, aimed at
+            providing them with a stepping ground into the career world as a
+            healthcare professional.
+          </li>
+          <li>
+            <strong>Membership Program: </strong> This program is accessible to
+            paid early, mid and advanced healthcare professionals. With an
+            annual membership fee of <strong> #3,000 only</strong>, participants
+            of the mentorship program have access to the following; <br />{" "}
+            <br />
+            <p>✓ Capacity Building workshops</p>
+            <p>✓ Leadership Seminars </p>
+            <p>✓ Mentoring programs</p>
+            <p>✓ Community Engagement programs</p>
+            <p>✓ Impact Programs.</p>
+          </li>
+        </ul>
+      </section>
       {/* team members  */}
       <section className="team-wrapper">
         <h4 className="light-blue-bg-text head">Meet The Team</h4>
