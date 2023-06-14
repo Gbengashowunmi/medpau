@@ -33,50 +33,27 @@ export default function Mwn() {
           <img src="/images/mwn-hero.jpeg" alt="about-us" />
         </div>
         <div className="details">
-          <h4 className="light-blue-bg-text">MEDPAU WOMEN NETWORK (MWN) </h4>
-          <h4>Mentoring Program</h4>
-          <h4 className="light-blue-bg-text">INTRODUCTION</h4>
+          <h4 className="light-blue-bg-text">ABOUT MEDPAU WOMEN NETWORK (MWN) </h4>
           <p>
-            The Medpau Women Network <br /> A network created to connect and
-            unite women in healthcare and other workspaces aimed at promoting
-            growth and professionalism. <br /> The Medpau Women's Network's
-            focus is to build up women especially in the healthcare workspace to
-            promote a proactive career life. In doing so, it solidifies a
-            supportive community a safe space for women to achieve success in
-            their professional endeavors.
+            Medpau Women Network is an Impact program under Medpau International
+            Limited, designed to provide empowerment to women in healthcare
+            careers, facilitating career growth and professional development.
+            The aim of this initiative is to groom women, especially in the
+            healthcare industry, towards a great career start and endless
+            progress. The Women's network also provides a sense of community to
+            women, providing them with adequate support and a safe environment
+            which encourages inclusion, networking and personal development. <br /> <br /> We
+            are an impact driven community, providing support, mentorship and
+            platform for women in healthcare to grow, develop their capacity and
+            rise in their career. Our goal is to build a network of impact
+            driven women tearing down barriers, challenging the status, driving
+            change, rise to top leadership positions and in turn, create
+            opportunities for those coming behind them.
           </p>
-          {/* why sign up  */}
-          <section className="choose-us">
-            <h3 className="light-blue-bg-text">
-              Why sign up for MWN Mentoring Program?
-            </h3>
-            <p className="why_sgn_up">
-              The MWN Mentoring program is designed to facilitates professional
-              growth at different stages in your career journey, through
-              collaborative learning, hands on projects, group discussion,
-              peer-to-peer learning, 1-on-1 conversations. <br /> It creates a
-              free and safe space where you to ask questions, receive support,
-              build confidence, gain new perspectives and deeper insight into
-              the Healthcare industry. <br />
-              You will engage in group discussions, 1-on-1 as well as
-              peer-to-peer learning. You will also engage with leaders from
-              Senior and Management positions, benefit from their rich
-              experiences and knowledge of the industry. <br /> They will also
-              help you navigate your current challenges as well as challenges
-              you are likely going to encounter in the future. <br /> You will
-              also build strong and lifelong professional relationship, and
-              connections. <br /> By the time you finish this program, you will
-              be able to clearly define and set your career goals, be guided to
-              achieve them, receive and apply constructive feedback necessary to
-              achieve those goals. <br />
-              You will chart your career path and build new skills needed to
-              take on new roles, challenge yourself and rise to higher positions
-              in your career.
-            </p>
-          </section>
         </div>
       </aside>
 
+      {/* about mwn  */}
       <section className="about_mwn">
         <h3 className="light-blue-bg-text">About MWN</h3>
 
@@ -95,10 +72,10 @@ export default function Mwn() {
             >
               <h3>Our Mission</h3>
               <p>
-                Building a community of impact-driven women to help tear down
-                barriers and create more opportunities for other women in
-                Nigeria and beyond. MWN also strives to ensure inclusivity,
-                equity, and fair treatment of women in healthcare.
+                To build a community of impact-driven women who would be
+                equipped to rise above barriers in the work place, creating more
+                growth opportunities for healthcare career women in Nigeria, and
+                beyond.
               </p>
             </div>
             {/* vision  */}
@@ -115,8 +92,38 @@ export default function Mwn() {
               <h3>Our Vision</h3>
               <p>
                 To create a network of women who are confident, self-reliant and
-                resilient leaders in the society and contribute immensely to
-                humanitarian growth through empowerment of the people.
+                impact-driven leaders in the society, who contribute to societal
+                development and human empowerment.
+              </p>
+            </div>
+
+            {/* core values  */}
+            <div
+              className="vision_mission"
+              data-aos="zoom-in"
+              data-aos-offset="20"
+              data-aos-delay="10"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="false"
+            >
+              <h3>Our Core Values</h3>
+              <p>
+                Our values are that all women, not just in the healthcare
+                community alone, become self-sustaining, well respected,
+                authentic, and truly empowered.
+                {/* The MWN is committed to
+                enhancing women's skills to support their advancement in their
+                respective workplace. We are a learning organization as we
+                encourage our women to take risks and make mistakes, to learn
+                and grow and get better, stronger, and smarter. */}
+                <ul>
+                  <li>Empowerment</li>
+                  <li>Integrity</li>
+                  <li>Resilience</li>
+                  <li>Leadership Development</li>
+                </ul>
               </p>
             </div>
 
@@ -126,8 +133,8 @@ export default function Mwn() {
           {/* core values  */}
           <div className="core_values">
             <div className="core_value_head ">
-              <h3 className="light-blue-bg-text">Our Core Values</h3>
-              <p>
+              <h3 className="light-blue-bg-text">What we do</h3>
+              {/* <p>
                 Our values are that all women, not just in the healthcare
                 community alone, become self-sustaining, well respected,
                 authentic, and truly empowered. The MWN is committed to
@@ -135,7 +142,7 @@ export default function Mwn() {
                 respective workplace. We are a learning organization as we
                 encourage our women to take risks and make mistakes, to learn
                 and grow and get better, stronger, and smarter.
-              </p>
+              </p> */}
             </div>
             <div className="values_wrapper">
               <div
@@ -148,14 +155,13 @@ export default function Mwn() {
                 data-aos-mirror="true"
                 data-aos-once="false"
               >
-                <h5 className="value_head">Empowerment</h5>
-                <img src="/images/empowerment.jpg" alt="" />
+                <h5 className="value_head">Networking</h5>
+                <img src="/images/networking.jpg" alt="" />
                 <p>
-                  Our goal as a community is to empower women and young girls
-                  while also creating inclusive, open and prosperous societies.
-                  In doing so, we will ensure to uplift women in a
-                  non-competitive environment and provide women a safe and
-                  positive space to grow and build skills
+                  Networking more than ever is the key to getting ahead. We are
+                  a create a community where professional women in healthcare
+                  can connect, receive or give support and build or strengthen
+                  relationships and connections within the industry.
                 </p>
               </div>
               <div
@@ -168,15 +174,13 @@ export default function Mwn() {
                 data-aos-mirror="true"
                 data-aos-once="false"
               >
-                <h5 className="value_head">Integrity</h5>
-                <img src="/images/integrity.jpg" alt="" />
+                <h5 className="value_head">Capacity Building</h5>
+                <img src="/images/capacity-building.jpg" alt="" />
                 <p>
-                  We will never create or communicate in any community that
-                  undermines and demeans women we exist to nurture. We make
-                  ourselves accountable to the highest integrity by impacting
-                  women to bring them to their highest potential and facilitate
-                  a long-term positive change in both their professional and
-                  personal lives.
+                  Developing and strengthening the instincts, and abilities of
+                  women in healthcare and empowering them with the skills they
+                  need to adapt, survive, and thrive in a fast-changing world.
+                  This can be in form of workshops, or seminars.
                 </p>
               </div>
 
@@ -190,15 +194,15 @@ export default function Mwn() {
                 data-aos-mirror="true"
                 data-aos-once="false"
               >
-                <h5 className="value_head">Resilience</h5>
-                <img src="/images/resilience.jpg" alt="" />
+                <h5 className="value_head">Mentorship</h5>
+                <img src="/images/mentorship.jpg" alt="" />
 
                 <p>
-                  We see the strength and courage of women everyday to push
-                  through boundaries and obstacles in a male dominated world and
-                  their ability to never give up. While we strive to inspire and
-                  encourage them, they in turn inspire us to stay focused and
-                  committed to our purpose as a community
+                  Providing a safe place where women in their entry and
+                  mid-level career can ask question, gain deeper insights about
+                  the industry, receive feedback and criticism needed grow. It
+                  also provides opportunities for more experienced women to
+                  impact younger professionals and give back to the society.
                 </p>
               </div>
               <div
@@ -215,17 +219,78 @@ export default function Mwn() {
                 <img src="/images/leadership.jpg" alt="" />
 
                 <p>
-                  Our goal is to provide women with the knowledge of networking
-                  and innovative skills to build them up to their maximum
-                  potentials. We offer them the know-how, tools, and connections
-                  to help them attain professional success. In doing so, we can
-                  be certain to develop talents within the network to enhance
-                  their skills
+                  Grooming young professional women to challenges status quo,
+                  and redefine possibilities. The essence in transformation that
+                  comes from within, so they can rise up to managerial and
+                  leadership roles. They will in turn become advocates and
+                  create opportunities for coming behind.
                 </p>
               </div>
             </div>
           </div>
         </div>
+      </section>
+      {/* tree section  */}
+      <section className="tree">
+        <h5>
+          With confidence, capacity, community, and the right collaborations,
+          any woman can achieve anything.
+        </h5>
+        <div
+          className="tree_content"
+          data-aos="zoom-in"
+          data-aos-offset="20"
+          data-aos-delay="10"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+        >
+          <img src="/images/medpau-women.png" alt="" />
+          <img src="/images/achieve.jpg" alt="" />
+        </div>
+      </section>
+
+      {/* mwn section  */}
+      <section className="choose-us">
+        <h3>Medpau Women Network (MWN) Mentoring Program</h3>
+
+        <p>
+          Do you know what all female high achievers' women have in common?
+          Someone who helped them see themselves in ways they may not otherwise
+          see in themselves, someone who held their hands and helped them
+          unleash their inner strength, someone who pushed them to grow and
+          guided them through it. <br /> MWN Mentoring Program is designed to
+          empower women and help them build skills needed to get ahead in their
+          career and rise to leadership positions. It models young women in the
+          healthcare industry into high performers, high achievers and agents of
+          change.
+        </p>
+        {/* why sign up  */}
+        <h3 className="light-blue-bg-text">
+          Why sign up for MWN Mentoring Program?
+        </h3>
+        <p className="why_sgn_up">
+          The MWN Mentoring program is designed to facilitates professional
+          growth at different stages in your career journey, through
+          collaborative learning, hands on projects, group discussion,
+          peer-to-peer learning, 1-on-1 conversations. It creates a free and
+          safe space where you to ask questions, receive support, build
+          confidence, gain new perspectives and deeper insight into the
+          Healthcare industry. <br />
+          You will engage in group discussions, 1-on-1 as well as peer-to-peer
+          learning. You will also engage with leaders from Senior and Management
+          positions, benefit from their rich experiences and knowledge of the
+          industry. They will also help you navigate your current challenges as
+          well as challenges you are likely going to encounter in the future.
+          You will also build strong and lifelong professional relationship, and
+          connections. <br />
+          By the time you finish this program, you will be able to clearly
+          define and set your career goals, be guided to achieve them, receive
+          and apply constructive feedback necessary to achieve those goals. You
+          will chart your career path and build new skills needed to take on new
+          roles, challenge yourself and rise to higher positions in your career.
+        </p>
       </section>
 
       {/* team members  */}

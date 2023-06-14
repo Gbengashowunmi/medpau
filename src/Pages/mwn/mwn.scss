@@ -14,6 +14,29 @@
   text-align: left;
   line-height: 40px;
 }
+
+.tree {
+  // border: 2px solid red;
+  width: 100%;
+  padding: 1rem;
+  h5 {
+    width: 50%;
+    margin: auto;
+  }
+  .tree_content {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    width: 100%;
+    margin: auto;
+    img {
+      width: 100%;
+      height: auto;
+      margin: auto;
+    }
+  }
+}
 .team {
   width: 100%;
   // border: 2px solid red;
@@ -28,10 +51,18 @@
 
 .mwp_vision {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   border: 2px solid var(--clr-secondary);
   margin: 1rem auto;
-  width: 70%;
+  width: 100%;
+  .vision_mission {
+    ul {
+      text-align: left;
+      width: 80%;
+      margin: auto;
+      // list-style: none;
+    }
+  }
   // background-image: url("about_us.jpg");
 }
 .core_values {
@@ -85,7 +116,7 @@
   // text-align: left;
   p {
     text-align: left;
-    font-size: .85rem;
+    font-size: 0.85rem;
   }
   img {
     width: 100%;
@@ -189,7 +220,15 @@
     margin: 1rem auto;
     width: 100%;
   }
-
+  .tree {
+    h5 {
+      width: 90%;
+      font-size: 1rem;
+    }
+    .tree_content {
+      padding: 1rem;
+    }
+  }
   .core_values {
     width: 100%;
     padding: 1rem;

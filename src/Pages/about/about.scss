@@ -116,6 +116,7 @@
     }
     p {
       font-size: 1.3vw;
+      text-align: left;
     }
   }
 
@@ -290,7 +291,7 @@
   }
 
   .choose-us {
-  padding: 1rem .5rem;
+    padding: 1rem 0.5rem;
     .heading {
       width: 95%;
     }
@@ -307,6 +308,9 @@
     .vision_mission {
       align-items: center;
       justify-content: center;
+      ul {
+        text-align: left;
+      }
       h3 {
         font-size: 5vw;
       }

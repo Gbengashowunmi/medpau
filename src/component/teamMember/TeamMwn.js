@@ -68,16 +68,23 @@ export default function TeamMwn() {
       </div>
       <div className="item">
         <TeamMember
+          image="/images/debby.jpeg"
+          name="Deborah Ayeko"
+          position="Vice President"
+        />
+      </div>
+      <div className="item">
+        <TeamMember
           image="/images/promise 2.jpg"
           name="promise Iheanacho"
-          position="Vice President"
+          position="Pr & Communications"
         />
       </div>
       <div className="item">
         <TeamMember
           image="/images/blessing.jpeg"
           name="Blessing Opara"
-          position="Pr & Communications"
+          position="membership coordinator"
         />
       </div>
 
@@ -87,13 +94,6 @@ export default function TeamMwn() {
           name="Judith Obasi"
           position="Programs Coordinator
 "
-        />
-      </div>
-      <div className="item">
-        <TeamMember
-          image="/images/debby.jpeg"
-          name="Deborah Ayeko"
-          position="Director Special Programs"
         />
       </div>
     </Slider>
