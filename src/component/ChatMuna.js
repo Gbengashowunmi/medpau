@@ -4,7 +4,7 @@ export class ChatMuna extends Component {
   componentDidMount() {
     (function (d, m) {
       var kommunicateSettings = {
-        appId: "6c248f815f81eed3dfe884ae46346134",
+        appId: "354de980f4fff4264ffd9486ad87ea075",
         popupWidget: true,
         automaticChatOpenOnNavigation: true,
       };

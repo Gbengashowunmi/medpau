@@ -56,7 +56,7 @@ export default function TeamSlide() {
         <TeamMember
           image="/images/MD-PIX-2.jpeg"
           name="REJOICE AZODO-PAUL"
-          position="MANAGING DIRECTOR"
+          position="CEO"
         />
       </div>
 
